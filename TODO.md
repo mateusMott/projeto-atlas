@@ -24,4 +24,4 @@ O plano de implementação foi aprovado pelo usuário. Critérios completos perm
 
 ## Diagnóstico e entrega de código
 - [x] Configurar e manter diagnósticos da linguagem do projeto, executar os comandos existentes de checagem/teste/build e corrigir problemas acionáveis antes da entrega. Confirmar as rotas declaradas em `/manus-routes.json`.
-- [ ] Enviar o código-fonte final para `https://github.com/mateusMott/projeto-atlas.git`, na branch `main`, preservando o remoto canônico e qualquer conteúdo remoto, sem force-push; confirmar o resultado efetivo do push. Não publicar o site como etapa implícita do envio ao GitHub.
+- [x] Enviar o código-fonte final para `https://github.com/mateusMott/projeto-atlas.git`, na branch `main`, preservando o remoto canônico e qualquer conteúdo remoto, sem force-push; confirmar o resultado efetivo do push. Não publicar o site como etapa implícita do envio ao GitHub.
