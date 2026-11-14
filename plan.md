@@ -1,6 +1,6 @@
 # Plano de implementação — Atlas de Personagens
 
-**Estado:** a aplicação completa foi publicada no runtime Manus e o código foi enviado ao GitHub; em 14/11/2026, o usuário solicitou uma versão acessível pelo GitHub Pages.
+**Estado:** a aplicação completa permanece no runtime Manus; a versão somente leitura do GitHub Pages foi compilada e publicada com sucesso em `https://mateusmott.github.io/projeto-atlas/`.
 
 ## Objetivo e escopo
 
