@@ -28,3 +28,8 @@ O plano de implementação foi aprovado pelo usuário. Critérios completos perm
 ## Diagnóstico e entrega de código
 - [x] Configurar e manter diagnósticos da linguagem do projeto, executar os comandos existentes de checagem/teste/build e corrigir problemas acionáveis antes da entrega. Confirmar as rotas declaradas em `/manus-routes.json`.
 - [x] Enviar o código-fonte final para `https://github.com/mateusMott/projeto-atlas.git`, na branch `main`, preservando o remoto canônico e qualquer conteúdo remoto, sem force-push; confirmar o resultado efetivo do push. Não publicar o site como etapa implícita do envio ao GitHub.
+
+## Acesso pelo GitHub Pages
+- [ ] Permitir abrir o Atlas em `https://mateusmott.github.io/projeto-atlas/` pelo GitHub Pages, mantendo a aparência do site atual e as funções públicas de ranking, busca/filtros, fichas e comparação com os pareceres versionados. Incluir as 54 fichas, os 1.431 pareceres e a imagem enviada de The Fulcrum no build público.
+- [ ] Como o GitHub Pages serve apenas arquivos estáticos, deixar explícito que esta cópia é somente leitura: login Manus OAuth, administração, gravação no banco e sincronização de alterações entre dispositivos permanecem no Atlas completo hospedado no Manus; não simular essas funções nem expor segredos no bundle/Workflow.
+- [ ] Configurar a publicação da branch `main` por GitHub Actions/Pages, validar que o workflow concluiu e que o endereço Pages responde com o Atlas, sem desativar nem substituir o runtime completo Manus.

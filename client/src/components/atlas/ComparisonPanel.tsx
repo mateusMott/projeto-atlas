@@ -1,11 +1,8 @@
-import { trpc } from "@/lib/trpc";
+import { useAtlasResearchLookup } from "@/lib/atlasData";
 import { ArrowLeftRight, ExternalLink, LoaderCircle, Swords } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
-import type { AtlasCharacter, ResearchLookup } from "./types";
+import type { AtlasCharacter } from "./types";
 import { displayValue, profileField, stablePairAvailable, tierLabel } from "./utils";
-
-type LookupHook = (args: { firstId: string; secondId: string }, options: { enabled: boolean }) => { data?: ResearchLookup | null; isLoading: boolean; isError: boolean; error?: { message?: string } };
-const atlasApi = trpc as unknown as { atlas: { research: { lookup: { useQuery: LookupHook } } } };
 
 function KeyValue({ label, value }: { label: string; value: unknown }) {
   return <div className="compare-stat"><span>{label}</span><strong>{displayValue(value)}</strong></div>;
@@ -42,7 +39,7 @@ export function ComparisonPanel({ characters, onOpenCharacter }: { characters: A
   const first = useMemo(() => characters.find((character) => character.id === firstId), [characters, firstId]);
   const second = useMemo(() => characters.find((character) => character.id === secondId), [characters, secondId]);
   const valid = stablePairAvailable(first, second);
-  const lookup = atlasApi.atlas.research.lookup.useQuery({ firstId, secondId }, { enabled: valid });
+  const lookup = useAtlasResearchLookup(firstId, secondId, valid);
   const result = lookup.data;
   const stale = Boolean(result && (result.isStale || result.status === "outdated"));
   const profiles = Array.isArray(result?.profiles) ? result.profiles : [];

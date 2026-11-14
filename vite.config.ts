@@ -163,7 +163,10 @@ function vitePluginPublicPlatformConfig(): Plugin {
       });
     },
     generateBundle() {
-      this.emitFile({ type: "asset", fileName: "api/platform/config.js", source: publicPlatformScript() });
+      const source = process.env.VITE_ATLAS_STATIC === "true"
+        ? "window.__MANUS_CONFIG__={};"
+        : publicPlatformScript();
+      this.emitFile({ type: "asset", fileName: "api/platform/config.js", source });
     },
   };
 }
@@ -171,6 +174,7 @@ function vitePluginPublicPlatformConfig(): Plugin {
 const plugins = [vitePluginPublicPlatformConfig(), react(), tailwindcss(), jsxLocPlugin(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
+  base: process.env.VITE_ATLAS_STATIC === "true" ? "/projeto-atlas/" : "/",
   plugins,
   resolve: {
     alias: {

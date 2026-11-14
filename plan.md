@@ -1,6 +1,6 @@
 # Plano de implementação — Atlas de Personagens
 
-**Estado:** a reconstrução inicial foi concluída e enviada ao GitHub; em 14/11/2026, o usuário solicitou e autorizou a revisão visual da ficha com base no vídeo de referência. O site permanece não publicado.
+**Estado:** a aplicação completa foi publicada no runtime Manus e o código foi enviado ao GitHub; em 14/11/2026, o usuário solicitou uma versão acessível pelo GitHub Pages.
 
 ## Objetivo e escopo
 
@@ -34,6 +34,8 @@ Reaproveitar a identidade e os recursos já fornecidos, sem acrescentar ilustra�
 
 Usar o starter já inicializado: React/TypeScript/Vite no cliente, Express e tRPC no servidor, Drizzle/MySQL para persistência e a tabela de usuários do template. Usar o fluxo padrão de Manus OAuth, com páginas públicas sem login e operações de escrita protegidas no servidor. Como o ambiente não fornece `OWNER_OPEN_ID`, a única conta administradora confirmada será identificada pelo e-mail Manus OAuth configurado por entrada protegida `ATLAS_ADMIN_EMAIL`; esse valor não será armazenado em código nem versionado. A concessão e a verificação administrativa devem falhar fechadas sem esse valor e não promover o primeiro login. Não criar senha local nem armazenar credenciais no repositório.
 
+Para `https://mateusmott.github.io/projeto-atlas/`, gerar adicionalmente um build estático com prefixo `/projeto-atlas/`, catálogo e metadados de confrontos exportados do seed versionado, e publicar por GitHub Actions/Pages. A variante Pages deve manter a identidade visual, ranking, pesquisa, fichas e consulta dos 1.431 pareceres, incluindo a imagem local do Fulcrum. Como GitHub Pages não executa Express, OAuth nem MySQL, essa cópia é somente leitura: não oferece autenticação, edição administrativa ou alterações compartilhadas e representa os dados versionados no commit. A administração autenticada permanece no app completo Manus. O workflow de Pages não recebe segredos do app.
+
 Extrair do HTML enviado os objetos de catálogo e pesquisa para arquivos versionados dentro do projeto. Criar tabelas para fichas e pares de confronto, preservando a chave de cada par e seu conteúdo integral. Um seed inicial versionado e idempotente importará o catálogo e as 1.431 análises apenas quando ainda não houver uma base inicializada; reinícios não poderão sobrescrever edições administrativas. A aplicação carregará e gravará esses registros por procedimentos tRPC, com operações administrativas autorizadas no servidor.
 
 As imagens e links de fonte serão reaproveitados do arquivo de referência, com fallback visual para imagens indisponíveis. As análises serão consultadas localmente no banco; ausência de parecer deve ser mostrada como tal, sem chamada externa.
@@ -51,4 +53,4 @@ As imagens e links de fonte serão reaproveitados do arquivo de referência, com
 
 ## Limites de entrega
 
-O banco e o login dependem do runtime Webdev/Manus ou de hospedagem compatível com o backend; um push ao GitHub, por si só, não publica o site nem fornece servidor OAuth/MySQL. O projeto manterá seu remoto canônico de checkpoints Manus; o código também será enviado ao repositório existente `mateusMott/projeto-atlas`, sem force-push e sem substituir conteúdo remoto. A publicação do site é separada e não está incluída nesta etapa.
+O banco e o login dependem do runtime Webdev/Manus ou de hospedagem compatível com o backend; GitHub Pages publica apenas os arquivos estáticos da variante de consulta e não fornece servidor OAuth/MySQL. O projeto manterá seu remoto canônico de checkpoints Manus; o código também será enviado ao repositório existente `mateusMott/projeto-atlas`, sem force-push e sem substituir conteúdo remoto. A implantação em Pages é separada da publicação Manus; somente a publicação solicitada ao Pages está incluída nesta etapa.

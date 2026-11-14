@@ -1,5 +1,5 @@
 import { startLogin } from "@/const";
-import { trpc } from "@/lib/trpc";
+import { ATLAS_MANUS_APP_URL, IS_ATLAS_STATIC, useAtlasCatalog } from "@/lib/atlasData";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { AlertTriangle, ArrowDown, ArrowUp, BookOpen, Check, Command, LoaderCircle, Search, Shield, Sparkles, X } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -9,14 +9,12 @@ import { CharacterCard } from "@/components/atlas/CharacterCard";
 import { CharacterSheet } from "@/components/atlas/CharacterSheet";
 import { ComparisonPanel } from "@/components/atlas/ComparisonPanel";
 import { TierSections } from "@/components/atlas/TierSections";
-import type { AtlasCharacter, CatalogResponse } from "@/components/atlas/types";
+import type { AtlasCharacter } from "@/components/atlas/types";
 import { normalizeSearch, searchText, tierLabel } from "@/components/atlas/utils";
 
 type Section = "ranking" | "compare" | "admin";
-type CatalogQuery = { data?: CatalogResponse; isLoading: boolean; isError: boolean; error?: { message?: string }; refetch: () => Promise<unknown> };
 type AuthUser = { role?: string; name?: string; email?: string; [key: string]: unknown };
 type AuthShape = { user: AuthUser | null; loading: boolean; isAuthenticated: boolean; logout: () => Promise<void> };
-const atlasApi = trpc as unknown as { atlas: { catalog: { useQuery: () => CatalogQuery } } };
 
 const FILTERS = ["Todos", "Marvel", "DC", "SCP", "Anime"] as const;
 const ANIME_HINTS = ["anime", "dragon ball", "naruto", "one piece", "bleach", "hunter x hunter", "jujutsu", "saint seiya", "cavaleiros", "sailor moon", "pokemon", "my hero", "boku no hero", "chainsaw", "demon slayer", "kimetsu", "evangelion", "goku"];
@@ -29,7 +27,7 @@ function universeMatches(universe: string, filter: string) {
 
 export default function Home() {
   const session = useAuth() as AuthShape;
-  const catalogQuery = atlasApi.atlas.catalog.useQuery();
+  const catalogQuery = useAtlasCatalog();
   const [section, setSection] = useState<Section>("ranking");
   const [universe, setUniverse] = useState<string>("Todos");
   const [search, setSearch] = useState("");
@@ -65,14 +63,15 @@ export default function Home() {
     if (event.key === "Escape") { setFocused(false); }
   };
 
-  const goLogin = () => { setAuthError(""); try { startLogin(); } catch (error) { setAuthError(error instanceof Error ? error.message : "O login não está configurado neste ambiente."); } };
+  const goLogin = () => { setAuthError(""); if (IS_ATLAS_STATIC) { setAuthError("O login Manus e as permissões administrativas estão disponíveis no Atlas completo."); return; } try { startLogin(); } catch (error) { setAuthError(error instanceof Error ? error.message : "O login não está configurado neste ambiente."); } };
   const logout = async () => { try { await session.logout(); } catch (error) { setAuthError(error instanceof Error ? error.message : "Não foi possível sair da conta."); } };
   const openSection = (next: Section) => { setSection(next); if (next !== "ranking") { setFocused(false); setSearch(""); } };
 
   return <div className="atlas-shell" id="top">
     <div className="ambient-glow ambient-green" /><div className="ambient-glow ambient-blue" />
-    <AtlasHeader section={section} onSection={openSection} isAdmin={isAdmin} isAuthenticated={isAuthenticated} userLabel={session.user?.name || session.user?.email} onLogin={goLogin} onLogout={logout} logoutBusy={session.loading} />
+    <AtlasHeader section={section} onSection={openSection} isAdmin={isAdmin} isAuthenticated={isAuthenticated} userLabel={session.user?.name || session.user?.email} onLogin={goLogin} onLogout={logout} logoutBusy={session.loading} staticReadOnly={IS_ATLAS_STATIC} />
     <main className="atlas-main">
+      {IS_ATLAS_STATIC && <div className="static-mode-banner" role="status"><strong>Versão pública somente leitura</strong><span>Conteúdo estático do repositório. Para entrar com Manus e editar o catálogo, abra o Atlas completo.</span></div>}
       {section === "ranking" && <>
         <section className="hero-search" aria-labelledby="hero-title">
           <div className="hero-stamp"><Sparkles size={13} /> ÍNDICE DE CONFRONTO <span>VOL. 01</span></div>
@@ -101,7 +100,11 @@ export default function Home() {
       </>}
       {section === "compare" && (catalogQuery.isLoading ? <div className="loading-panel"><LoaderCircle size={20} className="spin" /> Carregando personagens para comparação…</div> : catalogQuery.isError ? <div className="error-panel" role="alert"><AlertTriangle size={20} />Não foi possível carregar o catálogo para comparação.</div> : <ComparisonPanel characters={characters} onOpenCharacter={setSelectedCharacter} />)}
       {section === "admin" && <>
-        {isAdmin ? <AdminPanel catalog={catalog} /> : <section className="admin-gate"><div className="gate-icon"><Shield size={24} /></div><div className="section-kicker"><span>03 / ÁREA ADMINISTRATIVA</span><span>LEITURA PÚBLICA · ESCRITA RESTRITA</span></div><h1>Administração<br /><em>sob controle.</em></h1>{!isAuthenticated ? <><p>Entre com sua conta para verificar as permissões. Apenas contas com papel de administrador podem abrir o painel e salvar mudanças.</p><button className="login-button gate-login" type="button" onClick={goLogin}>Entrar com Manus <Check size={16} /></button></> : <><p>Esta sessão está autenticada, mas não possui o papel de administrador necessário para editar o catálogo.</p><div className="access-note"><Shield size={16} />O acesso administrativo é validado pelo servidor; não há modo de desenvolvimento alternativo.</div></>}{authError && <div className="inline-alert error" role="alert">{authError}</div>}</section>}
+        {isAdmin ? <AdminPanel catalog={catalog} /> : <section className="admin-gate"><div className="gate-icon"><Shield size={24} /></div><div className="section-kicker"><span>03 / ÁREA ADMINISTRATIVA</span><span>LEITURA PÚBLICA · ESCRITA RESTRITA</span></div><h1>Administração<br /><em>sob controle.</em></h1>
+          {IS_ATLAS_STATIC ? <><p>GitHub Pages serve uma cópia estática e não executa o login Manus, a API nem o banco de dados. Esta versão permite consultar o conteúdo, mas não salvar edições.</p><a className="login-button gate-login" href={ATLAS_MANUS_APP_URL} target="_blank" rel="noreferrer">Abrir Atlas completo <Check size={16} /></a><div className="access-note"><Shield size={16} />As edições administrativas continuam protegidas pelo login Manus no Atlas completo.</div></>
+            : !isAuthenticated ? <><p>Entre com sua conta para verificar as permissões. Apenas contas com papel de administrador podem abrir o painel e salvar mudanças.</p><button className="login-button gate-login" type="button" onClick={goLogin}>Entrar com Manus <Check size={16} /></button></>
+              : <><p>Esta sessão está autenticada, mas não possui o papel de administrador necessário para editar o catálogo.</p><div className="access-note"><Shield size={16} />O acesso administrativo é validado pelo servidor; não há modo de desenvolvimento alternativo.</div></>}
+          {authError && <div className="inline-alert error" role="alert">{authError}</div>}</section>}
       </>}
       {authError && section !== "admin" && <div className="toast-error" role="alert">{authError}<button type="button" onClick={() => setAuthError("")} aria-label="Fechar"><X size={15} /></button></div>}
     </main>

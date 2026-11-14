@@ -1,10 +1,11 @@
 import { CircleUserRound, LogOut, Shield, Swords, Trophy } from "lucide-react";
+import { ATLAS_MANUS_APP_URL } from "@/lib/atlasData";
 import type { ReactNode } from "react";
 
 type Section = "ranking" | "compare" | "admin";
-type Props = { section: Section; onSection: (section: Section) => void; isAdmin: boolean; isAuthenticated: boolean; userLabel?: string; onLogin: () => void; onLogout: () => void; logoutBusy?: boolean };
+type Props = { section: Section; onSection: (section: Section) => void; isAdmin: boolean; isAuthenticated: boolean; userLabel?: string; onLogin: () => void; onLogout: () => void; logoutBusy?: boolean; staticReadOnly?: boolean };
 
-export function AtlasHeader({ section, onSection, isAdmin, isAuthenticated, userLabel, onLogin, onLogout, logoutBusy }: Props) {
+export function AtlasHeader({ section, onSection, isAdmin, isAuthenticated, userLabel, onLogin, onLogout, logoutBusy, staticReadOnly = false }: Props) {
   const tabs: { id: Section; label: string; icon: ReactNode }[] = [
     { id: "ranking", label: "Ranking", icon: <Trophy size={15} /> },
     { id: "compare", label: "Comparação", icon: <Swords size={15} /> },
@@ -12,7 +13,7 @@ export function AtlasHeader({ section, onSection, isAdmin, isAuthenticated, user
   ];
   return <header className="atlas-header">
     <a className="atlas-brand" href="#top" aria-label="ATLAS — início">
-      <span className="brand-symbol"><img src="/atlas-symbol.svg" alt="" /></span>
+      <span className="brand-symbol"><img src={`${import.meta.env.BASE_URL}atlas-symbol.svg`} alt="" /></span>
       <span className="brand-word">ATLAS<span className="brand-period">.</span></span>
     </a>
     <div className="header-status"><span className="status-pip" /> ARQUIVO DE PERSONAGENS</div>
@@ -22,7 +23,7 @@ export function AtlasHeader({ section, onSection, isAdmin, isAuthenticated, user
       </button>)}
     </nav>
     <div className="header-actions">
-      {isAuthenticated ? <div className="user-menu"><span className="user-label"><CircleUserRound size={15} />{userLabel || "Conta"}</span><button type="button" className="quiet-button" onClick={onLogout} disabled={logoutBusy} aria-label="Sair"><LogOut size={15} /><span>{logoutBusy ? "Saindo…" : "Sair"}</span></button></div> : <button className="login-button" type="button" onClick={onLogin}><CircleUserRound size={15} />Entrar</button>}
+      {staticReadOnly ? <a className="login-button" href={ATLAS_MANUS_APP_URL} target="_blank" rel="noreferrer">Atlas completo</a> : isAuthenticated ? <div className="user-menu"><span className="user-label"><CircleUserRound size={15} />{userLabel || "Conta"}</span><button type="button" className="quiet-button" onClick={onLogout} disabled={logoutBusy} aria-label="Sair"><LogOut size={15} /><span>{logoutBusy ? "Saindo…" : "Sair"}</span></button></div> : <button className="login-button" type="button" onClick={onLogin}><CircleUserRound size={15} />Entrar</button>}
     </div>
   </header>;
 }
