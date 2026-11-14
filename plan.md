@@ -1,6 +1,6 @@
 # Plano de implementação — Atlas de Personagens
 
-**Estado:** aprovado pelo usuário em 13/11/2026; implementação autorizada e ainda não iniciada.
+**Estado:** a reconstrução inicial foi concluída e enviada ao GitHub; em 14/11/2026, o usuário solicitou e autorizou a revisão visual da ficha com base no vídeo de referência. O site permanece não publicado.
 
 ## Objetivo e escopo
 
@@ -11,7 +11,7 @@ A base fornecida tem **54 fichas**, sendo **44 no ranking principal**, e **1.431
 ## Comportamento previsto
 
 - **Ranking e pesquisa:** busca por nome, aliases e conteúdo das fichas, filtros por universo, navegação por teclado e atalho de busca; ranking principal separado do catálogo pesquisável; tiers S, A, B, C e D com acesso à listagem completa de cada Tier.
-- **Fichas:** nome, universo, Tier, visibilidade no ranking, imagem, resumo/versão, mentalidade, atributos de combate, poderes, fraquezas, observações, justificativa de Tier, link e nota da fonte, aliases; exibição em ficha detalhada e ampliação da imagem.
+- **Fichas:** nome, universo, Tier, visibilidade no ranking, imagem, resumo/versão, mentalidade, atributos de combate, poderes, fraquezas, observações, justificativa de Tier, link e nota da fonte, aliases; exibição em ficha detalhada e ampliação da imagem. Conforme o vídeo enviado em 14/11/2026, abrir a ficha em dois painéis verticais: imagem ampliável à esquerda e informações roláveis à direita. No painel de informações, priorizar cabeçalho com nome/universo/ranking, cartão de Tier destacado, descrição, mentalidade, atributos de combate em linhas rótulo/valor, poderes em etiquetas, fraquezas e fontes; preservar os demais campos e adaptar a disposição para telas móveis.
 - **Comparação:** seleção de dois personagens distintos, troca de lados, atributos lado a lado e parecer salvo com resultado ou inconclusão, confiança, versões, evidências, rotas de vitória, contrapontos e fontes. O resultado nunca será inferido pela comparação numérica dos atributos.
 - **Administração:** autenticação, saída da conta, busca e edição de fichas, criação/remoção de personagens, consulta do catálogo e cobertura das análises, além de exportação de uma cópia dos dados sem segredos. Alterações serão gravadas no banco compartilhado e visíveis nos dispositivos que consultarem o site.
 - **Integridade dos pareceres:** quando resumo/versão, poderes, atributos, fraquezas ou observações de um personagem forem alterados, as análises ligadas a ele serão marcadas como desatualizadas/suspensas para revisão. Personagem novo não terá parecer inventado; os pares ainda não revisados serão indicados como sem análise. Mudanças somente de Tier, imagem ou visibilidade não invalidarão pareceres.
