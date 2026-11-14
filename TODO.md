@@ -1,0 +1,27 @@
+# Entregas do Atlas de Personagens
+
+O plano de implementação foi aprovado pelo usuário. Critérios completos permanecem junto a cada entrega e só serão marcados como concluídos com evidência do resultado.
+
+## Interface, identidade e navegação
+- [x] Recriar fielmente o site de referência `https://atlas-de-personagens.mateusmott4.chatgpt.site/` usando o HTML enviado. Manter a identidade visual escura do Atlas, grade sutil, realces verdes, tipografia e marca fornecidas, textos em português e experiência responsiva; reutilizar as imagens e fontes do catálogo, com fallback quando uma imagem não carregar.
+- [x] Manter as seções de Ranking, Comparação e Administração e os estados de autenticação apropriados: visitantes podem consultar o Atlas; somente usuários autenticados com papel de administrador podem abrir e gravar alterações administrativas.
+
+## Catálogo, ranking e fichas
+- [x] Preservar as 54 fichas do catálogo e os 44 personagens do ranking principal; os personagens que não estão no ranking continuam acessíveis pela pesquisa/catálogo sem aparecer como membros do ranking.
+- [x] Organizar o ranking pelos tiers S, A, B, C e D; permitir abrir a listagem completa de cada tier. Manter a busca por nomes, aliases e conteúdo das fichas, os filtros Todos/Marvel/DC/SCP/Anime e a navegação por teclado (setas/Enter) e atalho Ctrl/Cmd+K.
+- [x] Abrir fichas com imagem ampliável e preservar nome, universo, Tier, resumo/versão, mentalidade, dimensionalidade, status existencial, ataque, defesa, velocidade, força, vigor, alcance, poderes, fraquezas, observações, justificativa do Tier, link/nota da fonte e aliases, mostrando valores não informados sem inventar conteúdo.
+
+## Comparação e análises salvas
+- [x] Permitir escolher dois personagens diferentes do catálogo, trocar os lados, apresentar os atributos lado a lado e consultar a análise salva do par, sem tratar Tier ou atributos como pontuação e sem chamadas de API/IA.
+- [x] Preservar integralmente as 1.431 análises de confrontos do arquivo: 196 com vencedor indicado e 1.235 inconclusivas. Apresentar resultado/inconclusão, confiança, versões consideradas, evidências, caminhos de vitória, contrapontos, método e fontes presentes nos dados; não declarar vencedor quando o dado não o indica. Exibir a distribuição real de estados, pois o texto do painel original (“1.431 vencedores definidos”) diverge do conjunto de dados.
+- [x] Para pares sem análise ou com análise desatualizada, indicar explicitamente que não há parecer vigente; não calcular ou fabricar um resultado.
+
+## Login, administração e persistência compartilhada
+- [x] Implementar login pelo fluxo padrão Manus OAuth, saída da conta e autorização verificada no servidor. Manter leitura pública e restringir edição/CRUD à única conta administrativa confirmada pelo usuário, validada por configuração protegida no servidor; nenhum outro usuário nem o primeiro login deve receber privilégios automaticamente. Sem a configuração, as operações de escrita devem falhar fechadas. Não incluir credenciais em código.
+- [x] Permitir ao administrador pesquisar e abrir fichas para edição, criar e excluir personagens e consultar o catálogo. Os campos editáveis devem cobrir nome, universo, Tier, participação no ranking, URL da imagem, resumo/versão, inteligência, os atributos de combate, poderes, fraquezas, observações, justificativa do Tier, fonte, nota da fonte e aliases.
+- [x] Persistir catálogo e pareceres no banco MySQL gerenciado de modo que alterações sejam compartilhadas entre dispositivos. Disponibilizar exportação dos dados sem segredos. A carga inicial do catálogo e dos confrontos deve ser versionada e idempotente, executada somente quando a base ainda não foi inicializada; reiniciar o app não pode sobrescrever alterações salvas.
+- [x] Quando resumo/versão, poderes, atributos, fraquezas ou observações de uma ficha mudarem, marcar como desatualizadas/suspensas as análises que a envolvem até revisão. Pares de personagem novo não podem receber parecer inventado. Alterar somente Tier, imagem ou visibilidade não deve suspender análise.
+
+## Diagnóstico e entrega de código
+- [x] Configurar e manter diagnósticos da linguagem do projeto, executar os comandos existentes de checagem/teste/build e corrigir problemas acionáveis antes da entrega. Confirmar as rotas declaradas em `/manus-routes.json`.
+- [ ] Enviar o código-fonte final para `https://github.com/mateusMott/projeto-atlas.git`, na branch `main`, preservando o remoto canônico e qualquer conteúdo remoto, sem force-push; confirmar o resultado efetivo do push. Não publicar o site como etapa implícita do envio ao GitHub.

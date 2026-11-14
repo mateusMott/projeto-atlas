@@ -1,0 +1,1728 @@
+{
+  "characters": [
+    {
+      "name": "The Writer",
+      "tier": 1,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/4/47/Writer_Hand.jpg/revision/latest/scale-to-width-down/700?cb=20191203000723"
+    },
+    {
+      "name": "One Above All",
+      "tier": 1,
+      "universe": "Marvel",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/4/4d/One_Above_All.png/revision/latest?cb=20200924000806"
+    },
+    {
+      "name": "The Presence",
+      "tier": 1,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/2/2a/P_68_14_%28Copy%29.jpg/revision/latest/scale-to-width-down/700"
+    },
+    {
+      "name": "The Fulcrum",
+      "tier": 1,
+      "universe": "Marvel",
+      "image": ""
+    },
+    {
+      "name": "Esquecimento",
+      "tier": 1,
+      "universe": "Marvel",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/9/9d/Oblivion_%28Marvel_Comics%29.jpg/revision/latest/scale-to-width-down/268?cb=20260126104251&path-prefix=pt-br"
+    },
+    {
+      "name": "Monitor Primordial",
+      "tier": 1,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/c/cb/Monitor-Mind_The_Overvoid.jpg/revision/latest/scale-to-width-down/700?cb=20191203021200"
+    },
+    {
+      "name": "Azathoth",
+      "tier": 1,
+      "universe": "Outros",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/5/56/Sasaeeraa.jpeg/revision/latest?cb=20200109153131&path-prefix=pt-br"
+    },
+    {
+      "name": "Sr. Creepypasta",
+      "tier": 1,
+      "universe": "Outros",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/3/3e/Mr.Creepypasta.png/revision/latest?cb=20181105225142&path-prefix=pt-br"
+    },
+    {
+      "name": "Eru Ilúvatar",
+      "tier": 1,
+      "universe": "Outros",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/c/c8/Eru.jpg/revision/latest?cb=20170318124901&path-prefix=pt-br"
+    },
+    {
+      "name": "SCP-001 (S. Andrew Swann)",
+      "tier": 1,
+      "universe": "SCP",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/6/69/Scp-001_swann.jpg/revision/latest?cb=20170710232836&path-prefix=pt-br"
+    },
+    {
+      "name": "A Fonte",
+      "tier": 1,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/0/0c/Jack_Kirby%27s_Fourth_World_013_002.jpg/revision/latest/scale-to-width-down/700?cb=20191203184002"
+    },
+    {
+      "name": "A Morte",
+      "tier": 1,
+      "universe": "Marvel",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/0/0d/Morte_.png/revision/latest/scale-to-width-down/700?cb=20191203172145"
+    },
+    {
+      "name": "A Grande Escuridão",
+      "tier": 1,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/6/69/Gdhh2.jpg/revision/latest?cb=20260718180039&path-prefix=pt-br"
+    },
+    {
+      "name": "O Primeiro Firmamento",
+      "tier": 1,
+      "universe": "Marvel",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/b/b4/Page18-2.webp/revision/latest?cb=20230731214807&path-prefix=pt-br"
+    },
+    {
+      "name": "Tribunal Vivo",
+      "tier": 1,
+      "universe": "Marvel",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/3/39/Living_Tribunal.jpg/revision/latest/scale-to-width-down/700?cb=20260127233317"
+    },
+    {
+      "name": "Os Irmãos Morte",
+      "tier": 1,
+      "universe": "SCP",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/a/a3/Os_Irm%C3%A3os.jpg/revision/latest?cb=20170801165133&path-prefix=pt-br"
+    },
+    {
+      "name": "Miguel Demiurgos",
+      "tier": 1,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/b/bd/Miguel_Demiurgos.png/revision/latest/scale-to-width-down/700?cb=20191206210012"
+    },
+    {
+      "name": "SCP-3812",
+      "tier": 3,
+      "universe": "SCP",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/3/3b/Unshaped2.jpg/revision/latest?cb=20191121094504&path-prefix=pt-br"
+    },
+    {
+      "name": "Featherine",
+      "tier": 2,
+      "universe": "Anime",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/4/4b/Featherine_ByAlonik.png/revision/latest?cb=20221231124113&path-prefix=pt-br"
+    },
+    {
+      "name": "Espectro",
+      "tier": 3,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/9/90/Corrigan_1_%282%29.jpg/revision/latest/scale-to-width-down/700?cb=20200726045501"
+    },
+    {
+      "name": "One Below All",
+      "tier": 2,
+      "universe": "Marvel",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/4/4b/Immortal_Hulk_Vol_1_12_Textless.jpg/revision/latest?cb=20260129135137&path-prefix=pt-br"
+    },
+    {
+      "name": "Leviatã",
+      "tier": 2,
+      "universe": "Outros",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/4/4e/Leviathan5.png/revision/latest?cb=20200121040623&path-prefix=pt-br"
+    },
+    {
+      "name": "Elaine Belloc",
+      "tier": 2,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/0/09/ElaineBelloc.jpg/revision/latest/scale-to-width-down/700?cb=20191203211436"
+    },
+    {
+      "name": "Perpétua",
+      "tier": 2,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/4/44/Perpertua.png/revision/latest/scale-to-width-down/700?cb=20191209171215"
+    },
+    {
+      "name": "Destino dos Perpétuos",
+      "tier": 2,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/1/12/Destiny_endless.png/revision/latest?cb=20171112211826&path-prefix=pt-br"
+    },
+    {
+      "name": "Senhor Destino",
+      "tier": 2,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/e/ee/Fatefattty.png/revision/latest?cb=20260626005524&path-prefix=pt-br"
+    },
+    {
+      "name": "Forjador de Mundos",
+      "tier": 2,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/b/ba/WorldForger.png/revision/latest/scale-to-width-down/700?cb=20191209173604"
+    },
+    {
+      "name": "Lucifer",
+      "tier": 3,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/c/ca/Lucifer.16.png/revision/latest/scale-to-width-down/700?cb=20191206033725"
+    },
+    {
+      "name": "Antimonitor",
+      "tier": 3,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/5/5e/Classic_anti-monitor_render_LP.png/revision/latest/scale-to-width-down/700?cb=20191204023756"
+    },
+    {
+      "name": "Homem Molécula",
+      "tier": 2,
+      "universe": "Marvel",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/8/87/76676825_446608765994380_4515244739703865344_n.png/revision/latest?cb=20191203183252&path-prefix=pt-br"
+    },
+    {
+      "name": "Hajun",
+      "tier": 2,
+      "universe": "Anime",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/b/b9/Hajun_Throne.png/revision/latest?cb=20200610202238&path-prefix=pt-br"
+    },
+    {
+      "name": "Galactus",
+      "tier": 3,
+      "universe": "Marvel",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/4/45/Galactus-0.png/revision/latest/scale-to-width-down/700?cb=20191204022158"
+    },
+    {
+      "name": "Rei Escarlate",
+      "tier": 2,
+      "universe": "SCP",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/c/c1/Scarlet_King.jpg/revision/latest?cb=20170727200547&path-prefix=pt-br"
+    },
+    {
+      "name": "Eternidade",
+      "tier": 2,
+      "universe": "Marvel",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/e/e9/Eternity.jpg/revision/latest/scale-to-width-down/700?cb=20200720004804"
+    },
+    {
+      "name": "Amatsu Mikaboshi",
+      "tier": 3,
+      "universe": "Marvel",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/9/98/31934d552f9828c3286223a81270f3eb7c947ce8r1-495-620v2_hq.jpg/revision/latest?cb=20201014161905&path-prefix=pt-br"
+    },
+    {
+      "name": "Beyonder",
+      "tier": 3,
+      "universe": "Marvel",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/2/2b/Pre-Retcon_Beyonder_Render.png/revision/latest/scale-to-width-down/700?cb=20191217230646"
+    },
+    {
+      "name": "Kami Tenchi",
+      "tier": 2,
+      "universe": "Anime",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/a/ac/Kami.png/revision/latest/scale-to-width-down/178?cb=20180707140937&path-prefix=pt-br"
+    },
+    {
+      "name": "Tokimi",
+      "tier": 2,
+      "universe": "Anime",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/3/34/Tumblr_onc49hcV3K1w7m77oo1_400.jpg/revision/latest/scale-to-width-down/268?cb=20200908091002&path-prefix=pt-br"
+    },
+    {
+      "name": "Yaldabaoth",
+      "tier": 3,
+      "universe": "SCP",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/b/b3/Yaldabaoth_design_04_by_sunnyclockwork-d9oa3py.jpg/revision/latest?cb=20170710210620&path-prefix=pt-br"
+    },
+    {
+      "name": "Sonho dos Perpétuos",
+      "tier": 3,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/3/38/Morpheus1.png/revision/latest?cb=20171112201326&path-prefix=pt-br"
+    },
+    {
+      "name": "Dr. Manhattan",
+      "tier": 3,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/e/ec/Dr_Manhattan_Liberproeliis.png/revision/latest?cb=20191203151255&path-prefix=pt-br"
+    },
+    {
+      "name": "Yogiri Takatou",
+      "tier": 4,
+      "universe": "Anime",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/8/87/Yogirimanga.png/revision/latest?cb=20230620035832&path-prefix=pt-br"
+    },
+    {
+      "name": "Thanos",
+      "tier": 3,
+      "universe": "Marvel",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwUb76wJ5Ds326KJr4uXcLFh0WEKH1qMsFJ7DOeBvbQ&s=10"
+    },
+    {
+      "name": "Wally West",
+      "tier": 4,
+      "universe": "DC",
+      "image": "https://static.wikia.nocookie.net/liberproeliis/images/5/58/Wally_West_render.png/revision/latest?cb=20201208230809&path-prefix=pt-br"
+    }
+  ],
+  "profiles": {
+    "one above all": {
+      "summary": "A entidade máxima tradicionalmente associada ao topo da cosmologia da Marvel: a personificação do próprio autor/criador por trás de toda a ficção, com autoridade autoral sobre o universo Marvel e tudo o que nele existe, incluindo as demais entidades abstratas (Eternidade, Morte, Esquecimento, Tribunal Vivo).",
+      "mentalidade": {
+        "Inteligência": "Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Ômega (autoridade autoral sobre toda a ficção Marvel, incluindo as próprias entidades abstratas que compõem a cosmologia)",
+        "Ataque": "Ômega (sua vontade autoral é a origem e a condição de existência de tudo, inclusive de entidades como Eternidade, Morte e Esquecimento)",
+        "Defesa": "Ômega, equivalente ao ataque",
+        "Velocidade": "Onipresença",
+        "Força": "Ilimitada",
+        "Vigor": "Absolutamente ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Autoridade autoral",
+        "Manipulação da realidade em escala existencial",
+        "Transcendência",
+        "Onipresença",
+        "Onisciência",
+        "Existência real fora da ficção",
+        "Imortalidade absoluta"
+      ],
+      "weaknesses": "Nenhuma fraqueza conhecida na interpretação usada pelo ranking.",
+      "rankReason": "Tier S, no topo absoluto: como autor/criador por trás de toda a ficção Marvel, está acima até das entidades abstratas máximas (Eternidade, Morte, Esquecimento, Tribunal Vivo), que existem apenas dentro da narrativa que ele escreve.",
+      "sourceNote": "Baseado na ficha de One Above All na Liber Proeliis. Fonte: https://liberproeliis.fandom.com/pt-br/wiki/One_Above_All — Status Existencial elevado para Ômega, no mesmo patamar de The Writer e A Presença, para refletir sua posição de autoridade autoral acima das entidades abstratas (Eternidade, Morte, Esquecimento, Tribunal Vivo)."
+    },
+    "scp-3812": {
+      "summary": "Uma entidade anômala capaz de alterar a realidade e ascender por camadas narrativas, tornando seu posicionamento extremamente acima de uma simples escala física ou dimensional.",
+      "mentalidade": {
+        "Inteligência": "Desconhecida"
+      },
+      "combat": {
+        "Dimensionalidade": "Não aplicável",
+        "Status Existencial": "Entidade anômala transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Transcendente",
+        "Velidade": "Não aplicável",
+        "Força": "Não aplicável",
+        "Vigor": "Irrelevante",
+        "Alcance": "Varia"
+      },
+      "powers": [
+        "Manipulação da realidade",
+        "Ascensão por camadas narrativas",
+        "Distorção espaço-temporal",
+        "Resistência a contenção",
+        "Alteração de baseline da realidade"
+      ],
+      "weaknesses": "A própria obra retrata instabilidade psicológica e percepção distorcida; isso é uma limitação de comportamento, não uma fraqueza de poder facilmente explorável.",
+      "rankReason": "Tier B: possui existência, ataque e defesa transcendentes, mas inteligência desconhecida, vigor irrelevante e alcance variável.",
+      "sourceNote": "A obra oficial do SCP descreve SCP-3812 como reality-altering e apresenta a hipótese de camadas de narrativa; uma entrevista do autor também esclarece os limites dessa ideia."
+    },
+    "yogiri takatou": {
+      "summary": "Protagonista de My Instant Death Ability Is So Overpowered, conhecido por uma habilidade de morte instantânea ativada pelo pensamento e por mechanisms automáticos de defesa.",
+      "mentalidade": {
+        "Inteligência": "Pseudo-Onisciente"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Transcendente",
+        "Velocidade": "Onipresente",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Não aplicável"
+      },
+      "powers": [
+        "Morte instantânea",
+        "Negação de imortalidade",
+        "Detecção automática de ameaça",
+        "Killing atemporal",
+        "Destruição de dados",
+        "Defesas automáticas"
+      ],
+      "weaknesses": "Nenhuma.",
+      "rankReason": "Tier C: apesar dos atributos transcendentes de sua forma máxima, permanece neste tier por possuir outras variações abaixo desse pico.",
+      "sourceNote": "Baseado na ficha de Yogiri Takatou na Liber Proeliis. Fonte: https://liberproeliis.fandom.com/pt-br/wiki/Yogiri_Takatou",
+      "observation": "Seu comportamento e as condições específicas de certas manifestações influenciam a maneira como costuma agir."
+    },
+    "lucifer": {
+      "summary": "Uma das entidades mais poderosas da cosmologia DC, associada à manipulação de criação e a níveis de poder muito acima de personagens cósmicos convencionais.",
+      "mentalidade": {
+        "Inteligência": "Consciência Cósmica"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Transcendente",
+        "Velocidade": "Onipresença",
+        "Força": "Infinita",
+        "Vigor": "Ilimitado",
+        "Alcance": "Infinito"
+      },
+      "powers": [
+        "Manipulação de realidade",
+        "Criação",
+        "Energia cósmica",
+        "Imortalidade",
+        "Manipulação dimensional"
+      ],
+      "weaknesses": "Não pode criar nada ex nihilo.",
+      "rankReason": "Tier B: possui consciência cósmica e atributos transcendentes, mas não consegue criar algo a partir do nada.",
+      "observation": "A representação exata de suas capacidades pode variar conforme a continuidade e a versão considerada."
+    },
+    "the presence": {
+      "summary": "Entidade superior da cosmologia DC, normalmente tratada como a manifestação máxima de autoridade divina dentro da estrutura do universo.",
+      "mentalidade": {
+        "Inteligência": "Inaplicável"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Ômega",
+        "Ataque": "Ômega",
+        "Defesa": "Ômega",
+        "Velocidade": "Onipresença",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Onipotência interpretativa",
+        "Onisciência",
+        "Onipresença",
+        "Criação",
+        "Manipulação da realidade"
+      ],
+      "weaknesses": "Nenhuma estabelecida de modo consistente na interpretação deste ranking.",
+      "rankReason": "Tier S: apresenta dimensionalidade e inteligência inaplicáveis, status, ataque e defesa Ômega, onipresença, vigor ilimitado e alcance irrestrito."
+    },
+    "the writer": {
+      "summary": "Personificação autoral da DC Comics: representa o próprio ato de escrever as histórias e tem controle total sobre tudo que acontece nelas.",
+      "mentalidade": {
+        "Inteligência": "Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Ômega (autoridade autoral sobre toda a ficção DC; controla o próprio ato de escrever as histórias)",
+        "Ataque": "Ômega, equivalente ao Status Existencial",
+        "Defesa": "Ômega, equivalente ao ataque",
+        "Velocidade": "Não aplicável",
+        "Força": "Não aplicável",
+        "Vigor": "Não aplicável",
+        "Alcance": "Não aplicável"
+      },
+      "powers": [
+        "Autoridade autoral",
+        "Transcendência",
+        "Indeterminismo",
+        "Invulnerabilidade",
+        "Onipresença",
+        "Onisciência",
+        "Existência real fora da ficção"
+      ],
+      "weaknesses": "Nenhuma listada.",
+      "rankReason": "Tier S: possui onisciência, dimensionalidade inaplicável, existência, ataque e defesa transcendentes, sem fraquezas listadas.",
+      "sourceNote": "Baseado na ficha de 'Os Escritores (DC Comics)' na wiki Liber Proeliis. Status Existencial elevado para Ômega, no mesmo patamar de A Presença e One Above All, refletindo sua autoridade autoral sobre toda a ficção DC."
+    },
+    "the fulcrum": {
+      "summary": "Entidade cósmica pouco vista da Marvel, servida pelos Celestiais e pela Horda; alguns a tratam como equivalente ou aspecto do próprio One Above All.",
+      "mentalidade": {
+        "Inteligência": "Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente (todo componente do universo físico é tratado como uma função do equilíbrio que ele mantém)",
+        "Defesa": "Transcendente",
+        "Velocidade": "Onipresença",
+        "Força": "Não aplicável",
+        "Vigor": "Não aplicável",
+        "Alcance": "Não aplicável"
+      },
+      "powers": [
+        "Manipulação da realidade",
+        "Onipresença",
+        "Quase onisciência",
+        "Existência além da dimensão",
+        "Manipulação de enredo",
+        "Ressurreição"
+      ],
+      "weaknesses": "Nenhuma.",
+      "observation": "Raramente interage diretamente com a criação, apesar de estar associado ao equilíbrio de toda a existência.",
+      "rankReason": "Tier S: possui onisciência, dimensionalidade inaplicável, existência, ataque e defesa transcendentes e onipresença, sem fraquezas.",
+      "sourceNote": "Baseado na ficha de The Fulcrum na Liber Proeliis."
+    },
+    "esquecimento": {
+      "summary": "Encarnação da não-existência na Marvel, residindo além do multiverso; junto com Eternidade, Morte e o Tribunal Vivo, forma os quatro pontos da hierarquia abstrata máxima da criação.",
+      "mentalidade": {
+        "Inteligência": "Onisciência possível, mas raramente demonstrada"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente (em sua manifestação mais elevada, engloba e transcende avatares, universos e conceitos inteiros)",
+        "Defesa": "Transcendente",
+        "Velocidade": "Não aplicável",
+        "Força": "Ilimitada",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Manipulação da realidade",
+        "Criação e controle de avatares",
+        "Onipresença",
+        "Manipulação conceitual",
+        "Quebra da quarta parede",
+        "Apagamento da existência"
+      ],
+      "weaknesses": "Nenhuma.",
+      "observation": "Sua entrada direta no multiverso causaria a destruição deste; por isso, costuma agir por meio de avatares e manifestações.",
+      "rankReason": "Tier S: possui dimensionalidade inaplicável, existência, ataque e defesa transcendentes, força e vigor ilimitados e alcance irrestrito, sem fraquezas.",
+      "sourceNote": "Baseado na ficha de Oblivion (Marvel Comics) na Liber Proeliis."
+    },
+    "monitor primordial": {
+      "summary": "O vazio primordial que serve de 'página em branco' sobre a qual toda a DC Comics foi escrita; deu origem aos Monitores, incluindo o Monitor e o Anti-Monitor.",
+      "mentalidade": {
+        "Inteligência": "Descrita como infinita, mas contraditória, pois não compreende o conceito de 'falha'"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente (encara até mesmo A Presença como um mero personagem de ficção sob sua perspectiva)",
+        "Defesa": "Transcendente",
+        "Velocidade": "Inaplicável",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Existência abstrata",
+        "Criação",
+        "Manipulação de enredo",
+        "Onipresença",
+        "Imortalidade",
+        "Manipulação do vazio"
+      ],
+      "weaknesses": "Nenhuma.",
+      "observation": "Sua natureza primordial é descrita como inconsciente, o que reduz a frequência de ações deliberadas.",
+      "rankReason": "Tier S: possui dimensionalidade e velocidade inaplicáveis, existência, ataque e defesa transcendentes, vigor ilimitado e alcance irrestrito, sem fraquezas.",
+      "sourceNote": "Baseado na ficha de Monitor-Mind The Overvoid na Liber Proeliis."
+    },
+    "azathoth": {
+      "summary": "O 'Deus Idiota Cego' dos Mitos de Cthulhu, entidade suprema que dorme no centro de toda a existência enquanto sonha o próprio universo; a própria Liber Proeliis o classifica no nível Ômega, acima da maioria dos Transcendentes.",
+      "mentalidade": {
+        "Inteligência": "Onisciente"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Ômega (existência anterior e além de todo tempo e espaço; até Yog-Sothoth é descrito como apenas uma parte sua, não o total)",
+        "Ataque": "Ômega (é o criador que governa tudo além dos infinitos arquétipos, superando até seus 'filhos' e o próprio autor dos Mitos)",
+        "Defesa": "Ômega, equivalente ao ataque (não pode ser destruído, pois a ideia de destruição só existe dentro de sua mente)",
+        "Velidade": "Onipresença",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Onipotência questionável",
+        "Onipresença",
+        "Onisciência (quando desperto)",
+        "Manipulação da realidade via sonho",
+        "Ser a própria causa de si mesmo"
+      ],
+      "weaknesses": "Nenhuma.",
+      "observation": "É frequentemente retratado adormecido, enquanto uma música ritual é tocada pelos Outros Deuses.",
+      "rankReason": "Tier S: apresenta inteligência onisciente, dimensionalidade inaplicável, status, ataque e defesa Ômega, onipresença, vigor ilimitado e alcance irrestrito, sem fraquezas.",
+      "sourceNote": "Baseado na ficha de Azathoth (Cthulhu Mythos) na Liber Proeliis."
+    },
+    "sr. creepypasta": {
+      "summary": "O narrador supremo do universo das Creepypastas; enxerga toda a mitologia de terror da internet como histórias diante de seus olhos.",
+      "mentalidade": {
+        "Inteligência": "Onisciente (conhece todo o passado, presente e futuro das histórias que narra)"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Infinito (vê todo o multiverso das Creepypastas como ficção contida em um livro, com estruturas de dimensões infinitas como o Inferno e a Biblioteca)",
+        "Defesa": "Infinita, equivalente ao ataque",
+        "Velocidade": "Onipresente (age como mera influência sobre tudo o que narra)",
+        "Força": "Ilimitada",
+        "Vigor": "Ilimitado",
+        "Alcance": "Transcendente"
+      },
+      "powers": [
+        "Onipresença",
+        "Onisciência",
+        "Manipulação conceitual e da história",
+        "Manipulação suprema da realidade dentro e fora das Creepypastas",
+        "Imortalidade",
+        "Regeneração"
+      ],
+      "weaknesses": "Nenhuma listada.",
+      "rankReason": "Mantido no topo por atuar como narrador/autor de todo o universo das Creepypastas, encarando até entidades como Zalgo como meros desenhos fictícios.",
+      "sourceNote": "Baseado na ficha de Sr. Creepypasta na Liber Proeliis."
+    },
+    "eru iluvatar": {
+      "summary": "O Criador único do legendário de Tolkien, o 'Um' que sustenta e criou tudo o que existe ou existirá; transcende identidade e pluralidade, sendo anterior a todos os Ainur que ele mesmo criou.",
+      "mentalidade": {
+        "Inteligência": "Onisciência (conhece toda a Música da Criação antes mesmo de ela existir)"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Transcendente",
+        "Velocidade": "Onipresença",
+        "Força": "Desconhecida",
+        "Vigor": "Desconhecido",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Criação",
+        "Onisciência",
+        "Onipresença",
+        "Transcendência total sobre os Ainur (Valar e Maiar)",
+        "Autoridade absoluta sobre o destino de Arda"
+      ],
+      "weaknesses": "Nenhuma listada; interfere apenas raramente e de forma indireta na história.",
+      "rankReason": "Mantido no topo como o criador único e transcendente de toda a cosmologia de Tolkien, acima até dos Valar mais poderosos como Manwë.",
+      "sourceNote": "Baseado em fichas de Eru Ilúvatar usadas por wikis de escalonamento de poder."
+    },
+    "scp-001 (s. andrew swann)": {
+      "summary": "Uma das propostas para o SCP-001, descrevendo um grupo de escritores de horror que, sem saber, são os verdadeiros autores por trás de toda a realidade da Fundação SCP.",
+      "mentalidade": {
+        "Inteligência": "Onisciência sobre a narrativa que escrevem, mesmo sem se perceberem como divindades"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável (existe acima e fora do conceito de narrativa e tempo da Fundação)",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Irrestrito",
+        "Defesa": "Irrestrito",
+        "Velocidade": "Não aplicável",
+        "Força": "Não aplicável",
+        "Vigor": "Irrelevante",
+        "Alcance": "Irrelevante"
+      },
+      "powers": [
+        "Autoria da realidade",
+        "Onipresença",
+        "Onisciência sobre o que escrevem",
+        "Manipulação de enredo",
+        "Criação de entidades como SCP-3812"
+      ],
+      "weaknesses": "Nenhuma.",
+      "observation": "Sua existência como um grupo de 'escritores' reais é ambígua dentro da própria narrativa, o que gera debate até entre editores da Fundação SCP.",
+      "rankReason": "Mantido no topo por ser, na prática, a autoria por trás de toda a Fundação SCP, incluindo entidades como o Rei Escarlate e os Irmãos Morte.",
+      "sourceNote": "Baseado em fichas de SCP-001 'Proposta de S. Andrew Swann' usadas por wikis de escalonamento de poder."
+    },
+    "a fonte": {
+      "summary": "A energia primordial da qual toda a criação da DC Comics emana, associada aos Novos Deuses; existe além do Muro-Fonte, na origem de todas as dimensões conhecidas e desconhecidas.",
+      "mentalidade": {
+        "Inteligência": "Onisciente (é a própria energia de criação presente em todas as coisas)"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente (descrita como 'tudo' e 'além de tudo', existindo fora de todas as dimensões conhecidas e do próprio tempo)",
+        "Defesa": "Transcendente",
+        "Velocidade": "Não aplicável (o próprio conceito de distância não se aplica a ela)",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Manipulação da realidade",
+        "Onipresença",
+        "Quase onisciência",
+        "Imortalidade",
+        "Origem de todo o poder dos Novos Deuses"
+      ],
+      "weaknesses": "Nenhuma listada; seria uma entidade distinta de A Presença, embora frequentemente confundida com ela.",
+      "rankReason": "Tier S: possui inteligência onisciente, dimensionalidade e velocidade inaplicáveis, existência, ataque e defesa transcendentes, vigor ilimitado e alcance irrestrito.",
+      "sourceNote": "Baseado na ficha de The Source na Liber Proeliis."
+    },
+    "a morte": {
+      "summary": "Uma das principais entidades abstratas do Onimundo Marvel, surgida como resposta à vida, atuando como agente do esquecimento que busca levar a existência ao nada absoluto.",
+      "mentalidade": {
+        "Inteligência": "Onisciência sobre o ciclo entre vida e morte"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável (existe ao lado de Esquecimento na escala cósmica)",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente (superior aos próprios avatares que já conquistaram Eternidade com a força de toda a existência)",
+        "Defesa": "Transcendente",
+        "Velocidade": "Inaplicável",
+        "Força": "Não aplicável",
+        "Vigor": "Inaplicável",
+        "Alcance": "Transcendente"
+      },
+      "powers": [
+        "Manipulação da vida e da morte",
+        "Onipresença",
+        "Imortalidade",
+        "Domínio sobre avatares",
+        "Preservação parcial do equilíbrio cósmico"
+      ],
+      "weaknesses": "Nenhuma.",
+      "observation": "Em sua manifestação atual, representa apenas uma fração do que será ao final de todas as coisas, segundo a mitologia Marvel.",
+      "rankReason": "Mantida no topo como uma das quatro entidades abstratas máximas da Marvel, ao lado de Eternidade, Esquecimento e o Tribunal Vivo.",
+      "sourceNote": "Baseado na ficha de Death (Marvel Comics) na Liber Proeliis."
+    },
+    "a grande escuridao": {
+      "summary": "A escuridão primordial que precede toda a criação na DC Comics, tratada como a contraparte sombria de A Presença; seu confronto com a Luz da Criação teria o poder de destruir tudo o que existe.",
+      "mentalidade": {
+        "Inteligência": "Onisciência implícita como força primordial consciente"
+      },
+      "combat": {
+        "Dimensionalidade": "Não aplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente (mais abrangente que a própria Luz da Criação que surgiu em oposição a ela; seu confronto com A Presença destruiria toda a Criação)",
+        "Defesa": "Transcendente",
+        "Velocidade": "Onipresença",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Manipulação das trevas",
+        "Manipulação da realidade",
+        "Onipresença e onisciência",
+        "Manipulação de espaço, tempo e conceitos",
+        "Imortalidade"
+      ],
+      "weaknesses": "Nenhuma.",
+      "observation": "Costuma permanecer inativa por períodos extremamente longos e desperta principalmente durante eventos cósmicos extremos.",
+      "rankReason": "Mantida no topo como a contraparte sombria direta de A Presença, um dos poucos seres tratados como capazes de rivalizar com ela.",
+      "sourceNote": "Baseado na ficha de The Great Darkness na Liber Proeliis."
+    },
+    "o primeiro firmamento": {
+      "summary": "A primeira e mais antiga iteração do multiverso Marvel, existente antes de todas as encarnações posteriores da criação; ao ser corrompido, reduziu a Oitava Eternidade a um único universo.",
+      "mentalidade": {
+        "Inteligência": "Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente (existiu antes de todas as encarnações posteriores do multiverso Marvel, que já se provaram conter infinitas dimensões superiores)",
+        "Defesa": "Transcendente",
+        "Velocidade": "Não aplicável (transcende todo nível de espaço e tempo)",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Corrupção da realidade em escala multiversal",
+        "Existência anterior ao multiverso atual",
+        "Imortalidade",
+        "Transcendência dimensional"
+      ],
+      "weaknesses": "Nenhuma notável listada.",
+      "rankReason": "Tier S: possui onisciência, dimensionalidade e velocidade inaplicáveis, existência, ataque e defesa transcendentes, vigor ilimitado e alcance irrestrito.",
+      "sourceNote": "Baseado na ficha de The First Firmament na Liber Proeliis."
+    },
+    "tribunal vivo": {
+      "summary": "Entidade cósmica humanoide que existe desde o princípio do universo, encarregada de proteger o multiverso Marvel de desequilíbrios entre forças místicas, impedindo que qualquer universo acumule poder demais.",
+      "mentalidade": {
+        "Inteligência": "Onisciente"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente (governa e supera os domínios de Eternidade, Morte, Caos e Ordem, tratando-os como facetas de sua própria existência)",
+        "Defesa": "Transcendente",
+        "Velocidade": "Onipresença",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Julgamento cósmico",
+        "Onipresença",
+        "Quase onisciência",
+        "Anulação de eventos em escala multiversal",
+        "Transcendência sobre dualidades e realidades opostas"
+      ],
+      "weaknesses": "Nenhuma.",
+      "observation": "Suas três faces — Equidade, Necessidade e Vingança — normalmente precisam concordar para que uma ação seja tomada.",
+      "rankReason": "Tier S: possui inteligência onisciente, dimensionalidade inaplicável, existência, ataque e defesa transcendentes, onipresença, vigor ilimitado e alcance irrestrito, sem fraquezas.",
+      "sourceNote": "Baseado na ficha de The Living Tribunal na Liber Proeliis."
+    },
+    "os irmaos morte": {
+      "summary": "Três entidades — A Morte de Todos, a Grande Morte e a Pequena Morte — que personificam a morte dentro da mitologia SCP; são anteriores ao próprio espaço-tempo e deram origem à Árvore do Conhecimento.",
+      "mentalidade": {
+        "Inteligência": "Onisciente"
+      },
+      "combat": {
+        "Dimensionalidade": "Não aplicável",
+        "Status Existencial": "Transcendente (existem antes do próprio espaço e tempo e deram origem à Criação)",
+        "Ataque": "Transcendente (criaram a Árvore do Conhecimento, cujo domínio abrange tudo o que existe em seus ramos e raízes)",
+        "Defesa": "Transcendente, equivalente ao ataque",
+        "Velocidade": "Não aplicável, provavelmente onipresente",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Manipulação da morte",
+        "Onipresença provável",
+        "Semi-onisciência",
+        "Criação da Árvore do Conhecimento",
+        "Concessão de artefatos de poder imenso"
+      ],
+      "weaknesses": "Nenhuma física conhecida.",
+      "rankReason": "Tier S: possuem inteligência onisciente, existência, ataque e defesa transcendentes, vigor ilimitado e alcance irrestrito.",
+      "sourceNote": "Baseado na ficha de Os Irmãos Morte na Liber Proeliis."
+    },
+    "miguel demiurgos": {
+      "summary": "Arcanjo demiúrgico da DC/Vertigo, irmão gêmeo de Lúcifer Morningstar; sustenta cada átomo da criação de A Presença e é tido como o servo mais poderoso dela.",
+      "mentalidade": {
+        "Inteligência": "Onisciente"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Transcendente (nem mesmo o Espectro conseguiu feri-lo por completo)",
+        "Velocidade": "Onipresença",
+        "Força": "Infinita",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Poder demiúrgico (Dunamis Demiurgos)",
+        "Manipulação da realidade",
+        "Imortalidade",
+        "Manipulação espaço-temporal",
+        "Regeneração verdadeiramente divina"
+      ],
+      "weaknesses": "Nenhuma.",
+      "observation": "Seu irmão Lúcifer é tradicionalmente associado a dar forma criativa ao Dunamis Demiurgos de Miguel, que por si só tende à liberação de poder bruto.",
+      "rankReason": "Tier S: possui inteligência onisciente, dimensionalidade inaplicável, existência, ataque e defesa transcendentes, onipresença, força infinita, vigor ilimitado e alcance irrestrito, sem fraquezas.",
+      "sourceNote": "Baseado na ficha de Michael Demiurgos na Liber Proeliis."
+    },
+    "featherine": {
+      "summary": "Forma bruxa suprema de Umineko no Naku Koro ni, criadora e governante da Cidade dos Livros; enxerga toda a criação, incluindo o próprio mundo das bruxas, como um livro que pode reescrever livremente.",
+      "mentalidade": {
+        "Inteligência": "Onisciente"
+      },
+      "combat": {
+        "Dimensionalidade": "Transcende a hierarquia de camadas do mundo das bruxas",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Ômega",
+        "Defesa": "Equivalente ao ataque",
+        "Velocidade": "Onipresente dentro de seu domínio",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Reescrita da realidade como narrativa",
+        "Onipresença",
+        "Quase onisciência",
+        "Manipulação do tempo e da causalidade",
+        "Domínio total sobre a hierarquia das bruxas"
+      ],
+      "weaknesses": "Se seu dispositivo de memória for destruído, sua memória pode ser alterada; no entanto, ele é indestrutível e isso não afeta seu poder. Essa fraqueza só existe porque ela mesma a coloca. Não é exatamente uma fraqueza, mas, devido à sua natureza na Forma Verdadeira, ela pode deixar de ter ideias como Criadora e acabar “morrendo”.",
+      "observation": "Seu dispositivo de memória possui formato de meia-lua, e longos ciclos de existência podem levá-la ao tédio.",
+      "rankReason": "Tier A: tem inteligência onisciente, status transcendente, ataque Ômega, defesa equivalente, onipresença no domínio, vigor ilimitado e alcance irrestrito.",
+      "sourceNote": "Baseado na ficha de Featherine Augustus Aurora na Liber Proeliis."
+    },
+    "espectro": {
+      "summary": "O Espírito da Vingança de Deus, unido ao policial Jim Corrigan; pune almas culpadas com castigos irônicos e, em sua forma verdadeira, funde-se ao Vazio Além dos Vazios, uma extensão de A Presença.",
+      "mentalidade": {
+        "Inteligência": "Onisciente"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Equivalente ao ataque",
+        "Velocidade": "Não aplicável",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Infinito"
+      },
+      "powers": [
+        "Manipulação da realidade para punições",
+        "Olhar indutor de medo",
+        "Magia extensa",
+        "Manipulação de matéria e energia",
+        "Invulnerabilidade"
+      ],
+      "weaknesses": "Sua verdadeira capacidade raramente é totalmente explorada.",
+      "rankReason": "Tier B: reúne onisciência, existência, ataque e defesa transcendentes, velocidade e força não aplicáveis, vigor ilimitado e alcance infinito.",
+      "sourceNote": "Baseado na ficha de The Spectre na Liber Proeliis."
+    },
+    "one below all": {
+      "summary": "Descrito como a 'Sombra de Deus' na cosmologia Marvel, personificando a forma mais profunda do inferno — o vazio que resta na ausência do One Above All.",
+      "mentalidade": {
+        "Inteligência": "Onisciente"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente (personifica a forma mais profunda do inferno, o vazio deixado na ausência de Deus)",
+        "Defesa": "Transcendente",
+        "Velocidade": "Onipresença",
+        "Força": "Infinita",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Personificação da ausência divina",
+        "Onipresença",
+        "Manipulação conceitual"
+      ],
+      "weaknesses": "Precisa de um corpo conectado com a energia gamma para poder interagir com o mundo além de Below Place.",
+      "observation": "É apresentado mais como uma força ou conceito cósmico do que como um personagem que age diretamente na maior parte das histórias.",
+      "rankReason": "Tier A: reúne inteligência onisciente, dimensionalidade inaplicável, status, ataque e defesa transcendentes, onipresença, força infinita, vigor ilimitado e alcance irrestrito.",
+      "sourceNote": "Baseado na ficha de The One Below All na Liber Proeliis."
+    },
+    "leviata": {
+      "summary": "Entidade vinculada a Tom Taylor que contém uma hierarquia infinita de toda a sua espécie dentro de si, cada 'baleia' contendo a anterior; existe além da hierarquia dos mundos, sendo descrito como o último não-ser.",
+      "mentalidade": {
+        "Inteligência": "Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente (tudo mais é como um sonho comparado a ele; é a antítese da essência e da existência)",
+        "Ataque": "Transcendente (contém uma hierarquia infinita de toda a sua espécie dentro de si)",
+        "Defesa": "Transcendente, equivalente ao ataque",
+        "Velocidade": "Onipresença",
+        "Força": "Infinita",
+        "Vigor": "Não aplicável",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Manipulação da história e do tempo",
+        "Manipulação do espaço",
+        "Autossustentação",
+        "Criação",
+        "Transcendência",
+        "Manipulação da causalidade e da morte"
+      ],
+      "weaknesses": "Possui uma ligação especial com Tom Taylor: se ele for ferido, o Leviatã também é.",
+      "rankReason": "Tier A: possui onisciência, dimensionalidade inaplicável, existência, ataque e defesa transcendentes, onipresença, força infinita e alcance irrestrito.",
+      "sourceNote": "Baseado na ficha de O Leviatã (DC Comics) na Liber Proeliis."
+    },
+    "elaine belloc": {
+      "summary": "Filha de Michael Demiurgos, que herdou o Dunamis Demiurgos de seu pai e chegou a assumir o controle da própria Criação de Lúcifer, além de ter sido responsável por uma Nova Criação acidental.",
+      "mentalidade": {
+        "Inteligência": "Onisciente"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente (recebeu a Criação de Yahweh e assumiu seu lugar, depois de servir de receptáculo do Dunamis Demiurgos no mesmo nível de seu pai)",
+        "Defesa": "Transcendente, equivalente ao ataque",
+        "Velocidade": "Onipresente em sua fase mais elevada",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Poder demiúrgico herdado",
+        "Manipulação da realidade",
+        "Criação",
+        "Controle sobre a Criação de Lúcifer",
+        "Onipresença (em forma plena)"
+      ],
+      "weaknesses": "Nenhuma.",
+      "observation": "Em períodos anteriores de instabilidade emocional, já causou desastres dentro do próprio domínio.",
+      "rankReason": "Tier A: em sua fase plena possui inteligência onisciente, status, ataque e defesa transcendentes, onipresença, vigor ilimitado e alcance irrestrito.",
+      "sourceNote": "Baseado na ficha de Elaine Belloc na Liber Proeliis."
+    },
+    "perpetua": {
+      "summary": "Uma das Super Celestiais, criadora de todo o Multiverso da DC Comics e mãe do Monitor, do Anti-Monitor e do Forjador de Mundos; foi aprisionada no Muro-Fonte após seus filhos denunciarem seus planos.",
+      "mentalidade": {
+        "Inteligência": "Pseudo-Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Transcendente",
+        "Velocidade": "Não aplicável (está acima do conceito de velocidade, por existir na 6ª dimensão, além de espaço ou tempo)",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Criação de multiversos",
+        "Manipulação da realidade",
+        "Imortalidade",
+        "Autoridade sobre o Muro-Fonte",
+        "Domínio sobre suas criações (Monitor, Anti-Monitor e Forjador de Mundos)"
+      ],
+      "weaknesses": "Nenhuma.",
+      "rankReason": "Tier A: possui pseudo-onisciência, dimensionalidade inaplicável, existência, ataque e defesa transcendentes, vigor ilimitado e alcance irrestrito.",
+      "sourceNote": "Baseado na ficha de Perpetua na Liber Proeliis.",
+      "observation": "Foi aprisionada no Muro-Fonte pelos próprios filhos em uma etapa de sua história."
+    },
+    "destino dos perpetuos": {
+      "summary": "O mais velho dos Perpétuos (Endless), personificando o próprio destino; carrega o Livro das Almas, contendo todos os eventos passados, presentes e futuros.",
+      "mentalidade": {
+        "Inteligência": "Onisciente"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Abstrato (personifica o próprio conceito de destino, sendo a abstração em si e não apenas uma manifestação dela)",
+        "Ataque": "Infinito",
+        "Defesa": "Equivalente ao ataque",
+        "Velocidade": "Onipresença",
+        "Força": "Imensurável",
+        "Vigor": "Imensurável",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Manipulação do destino e da probabilidade",
+        "Manipulação causal",
+        "Manipulação espaço-temporal",
+        "Percepção cósmica",
+        "Imortalidade"
+      ],
+      "weaknesses": "Nenhuma.",
+      "rankReason": "Tier A: possui onisciência, dimensionalidade inaplicável, existência abstrata, ataque infinito, onipresença, força e vigor imensuráveis e alcance irrestrito.",
+      "sourceNote": "Baseado na ficha de Destiny of the Endless na Liber Proeliis.",
+      "observation": "É extremamente estoico e, por sua própria natureza, não costuma interferir para alterar aquilo que já está destinado."
+    },
+    "senhor destino": {
+      "summary": "Título usado por vários usuários do Elmo do Destino ao longo da história da DC Comics, encarregados de manter o equilíbrio entre ordem e caos no universo; seu feito mais forte registrado pela própria wiki foi derrotar as entidades da Ordem e do Caos que ameaçavam o multiverso pré-Crise.",
+      "mentalidade": {
+        "Inteligência": "Consciência Cósmica"
+      },
+      "combat": {
+        "Dimensionalidade": "Não aplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Transcendente",
+        "Velocidade": "Não aplicável",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Infinito"
+      },
+      "powers": [
+        "Magia e feitiçaria avançadas",
+        "Manipulação da realidade",
+        "Clarividência",
+        "Teletransporte e viagem dimensional",
+        "Evocação e banimento de qualquer criatura de qualquer plano de existência",
+        "Ressurreição de aliados"
+      ],
+      "weaknesses": "Nenhuma.",
+      "rankReason": "Tier A: possui consciência cósmica, dimensionalidade, velocidade e força não aplicáveis, existência, ataque e defesa transcendentes, vigor ilimitado e alcance infinito.",
+      "sourceNote": "Baseado nos feitos de Senhor Destino (DC Comics) conforme estruturado em wikis de escalonamento como a Liber Proeliis.",
+      "observation": "Em outras manifestações, o Amuleto de Anúbis e a ausência do capacete já influenciaram a atuação do hospedeiro humano."
+    },
+    "forjador de mundos": {
+      "summary": "Um dos três filhos de Perpétua, junto ao Monitor e ao Anti-Monitor; reside na Sexta Dimensão, criando incontáveis universos com seu Martelo Cósmico na tentativa de forjar um multiverso perfeito.",
+      "mentalidade": {
+        "Inteligência": "Pseudo-Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente em pleno poder na Sexta Dimensão (criou o Multiverso e, depois, um segundo Multiverso inteiro, ambos com infinitos universos)",
+        "Defesa": "Equivalente ao ataque",
+        "Velocidade": "Não aplicável",
+        "Força": "Infinita",
+        "Vigor": "Ilimitado",
+        "Alcance": "Infinito"
+      },
+      "powers": [
+        "Criação de universos e multiversos",
+        "Manipulação da realidade",
+        "Uso do Martelo Cósmico",
+        "Criação de seres como Barbatos",
+        "Transcendência dimensional"
+      ],
+      "weaknesses": "Nenhuma.",
+      "rankReason": "Tier A: possui pseudo-onisciência, dimensionalidade e velocidade inaplicáveis, existência e ataque transcendentes, força infinita, vigor ilimitado e alcance infinito.",
+      "sourceNote": "Baseado em fichas de The World Forger usadas por wikis de escalonamento de poder.",
+      "observation": "O Martelo Cósmico é um instrumento recorrente em seus atos de criação ativa."
+    },
+    "homem molecula": {
+      "summary": "Owen Reece, um humano comum que se tornou uma das entidades mais poderosas do multiverso Marvel; seu poder varia enormemente conforme seu estado mental, podendo igualar ou até superar o Beyonder.",
+      "mentalidade": {
+        "Inteligência": "Supergênio"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável (sem seus bloqueios mentais, existe como uma única consciência através de todo o espaço e tempo)",
+        "Status Existencial": "Transcendente (em pleno poder, sem bloqueios mentais)",
+        "Ataque": "Transcendente (em pleno poder, já foi afirmado mais forte que qualquer outro ser do Multiverso, incluindo o Tribunal Vivo)",
+        "Defesa": "Transcendente, equivalente ao ataque",
+        "Velocidade": "Irrelevante, em pleno poder",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado, compartilhado entre todas as suas versões",
+        "Alcance": "Irrestrito, em pleno poder"
+      },
+      "powers": [
+        "Manipulação da matéria em nível atômico",
+        "Manipulação da realidade",
+        "Reparo de destruição multiversal",
+        "Absorção de poder de outras entidades cósmicas"
+      ],
+      "weaknesses": "Nenhuma.",
+      "observation": "Fora de seu estado de pico, costuma limitar o próprio poder por bloqueios mentais e por sua estabilidade emocional.",
+      "rankReason": "Tier A: em seu pico possui inteligência de supergênio, dimensionalidade inaplicável, status, ataque e defesa transcendentes, velocidade irrelevante, vigor ilimitado e alcance irrestrito, sem fraquezas.",
+      "sourceNote": "Baseado na ficha de Molecule Man na Liber Proeliis (considerando apenas sua versão mais poderosa, sem os bloqueios mentais que normalmente limitam seu poder)."
+    },
+    "hajun": {
+      "summary": "Antagonista principal de Kajiri Kamui Kagura, governante da Sexta Geração do Trono; possui um Taikyoku (medida de poder) impossível de mensurar, capaz de esmagar outros deuses Hadou com um só dedo.",
+      "mentalidade": {
+        "Inteligência": "Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente (como Deus Hadou, eventualmente consumirá toda a criação)",
+        "Ataque": "Transcendente (seu trono é dito ser um universo contendo infinitos outros universos; afirmou ser capaz de esmagar todos os Deuses Hadou apenas com o dedo)",
+        "Defesa": "Transcendente, equivalente ao ataque",
+        "Velocidade": "Onipresença",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Infinito"
+      },
+      "powers": [
+        "Taikyoku (poder divino imensurável)",
+        "Semi-onisciência",
+        "Manipulação de reinos e tronos",
+        "Domínio sobre gerações de deuses Hadou"
+      ],
+      "weaknesses": "Fraquezas físicas: possui controle muito ruim sobre as Leis dos outros Deuses Hadou; absorver muitas almas o enfraquece; a remoção de seu 'Tumor', um ser separado que alimenta seu poder subconscientemente, reduz drasticamente seu poder; estagnar temporariamente o Trono impede que sua Lei seja completada. Fraquezas psicológicas: é extremamente arrogante, insano, superconfiante e narcisista.",
+      "rankReason": "Tier A: possui onisciência, dimensionalidade inaplicável, existência, ataque e defesa transcendentes, onipresença, vigor ilimitado e alcance infinito.",
+      "sourceNote": "Baseado na ficha de Hajun na Liber Proeliis.",
+      "observation": "Carrega profundo trauma e ódio pela realidade."
+    },
+    "galactus": {
+      "summary": "O Devorador de Mundos, único sobrevivente do universo anterior ao atual; posicionado ao lado dos Celestiais na ordem cósmica Marvel, já ameaçou destruir toda a existência quando plenamente alimentado.",
+      "mentalidade": {
+        "Inteligência": "Divina"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente (em sua manifestação plena como Aniquilador Total)",
+        "Ataque": "Transcendente",
+        "Defesa": "Equivalente ao ataque",
+        "Velocidade": "Não aplicável",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Infinito"
+      },
+      "powers": [
+        "Poder Cósmico",
+        "Devoração de planetas e energia vital",
+        "Manipulação de energia",
+        "Criação de arautos como o Surfista Prateado",
+        "Manifestação do Aniquilador Total"
+      ],
+      "weaknesses": "Sua fome constante é ao mesmo tempo sua motivação e sua maior vulnerabilidade, podendo enfraquecê-lo quando faminto.",
+      "rankReason": "Tier B: possui inteligência divina, dimensionalidade, velocidade e força inaplicáveis, existência e ataque transcendentes, vigor ilimitado e alcance infinito, mas ainda é afetado por sua fome.",
+      "sourceNote": "Baseado na ficha de Galactus na Liber Proeliis."
+    },
+    "rei escarlate": {
+      "summary": "Divindade quase onipotente da mitologia SCP, considerada pelo Conselho O5 como a força mais malévola do multiverso; muitos SCPs são resultado direto de sua mutilação ou de mortais empoderados por ele.",
+      "mentalidade": {
+        "Inteligência": "Infinita"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Abstrato",
+        "Ataque": "Infinito (destruiu a Árvore do Conhecimento e feriu tanto Mekhane quanto Yaldabaoth; só falhou até hoje contra os Irmãos Morte)",
+        "Defesa": "Infinita, equivalente ao ataque",
+        "Velocidade": "Infinita",
+        "Força": "Ilimitada",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Manipulação da realidade e da causalidade",
+        "Manipulação conceitual",
+        "Criação de entidades (Leviatãs, filhas-noivas)",
+        "Imortalidade",
+        "Uso das Sete Lanças"
+      ],
+      "weaknesses": "Nenhuma.",
+      "observation": "As Sete Lanças já tiveram papel importante em confrontos contra suas manifestações, chegando a feri-lo gravemente em determinadas narrativas.",
+      "rankReason": "Tier A: possui inteligência infinita, dimensionalidade inaplicável, existência abstrata, ataque e defesa infinitos, velocidade infinita, força e vigor ilimitados e alcance irrestrito, sem fraquezas.",
+      "sourceNote": "Baseado na ficha de O Rei Escarlate na Liber Proeliis."
+    },
+    "eternidade": {
+      "summary": "A personificação viva do universo e, posteriormente, de infinitas Eternidades universais e multiversais da Marvel; reinos como a Costa Distante existem dentro dela, além da vida, da morte, do tempo e do espaço.",
+      "mentalidade": {
+        "Inteligência": "Onisciência sobre o universo/multiverso que personifica"
+      },
+      "combat": {
+        "Dimensionalidade": "Personifica simultaneamente infinitas Eternidades universais e multiversais",
+        "Status Existencial": "Transcendente (em sua forma mais elevada)",
+        "Ataque": "Transcendente (reinos como a Costa Distante existem dentro dela, além de vida, morte, tempo e espaço; muito acima de entidades como Galactus)",
+        "Defesa": "Transcendente, equivalente ao ataque",
+        "Velocidade": "Onipresente dentro do domínio que personifica",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Inaplicável"
+      },
+      "powers": [
+        "Personificação do universo/multiverso",
+        "Onipresença",
+        "Manipulação temporal e espacial",
+        "Manipulação de energia e matéria",
+        "Telepatia e telecinesia cósmicas"
+      ],
+      "weaknesses": "Está intimamente ligada à saúde do universo que personifica, sendo afetada por eventos que o ameaçam.",
+      "rankReason": "Tier A: rebaixada porque existe uma forma com status existencial abstrato, abaixo do máximo considerado para o Tier S.",
+      "sourceNote": "Baseado na ficha de Eternity na Liber Proeliis."
+    },
+    "amatsu mikaboshi": {
+      "summary": "Conhecido pelos panteões como o deus japonês do caos, mas na verdade um aspecto de Esquecimento que representa o Vazio; busca reduzir tudo à não-existência original.",
+      "mentalidade": {
+        "Inteligência": "Onisciência (como aspecto de Esquecimento, representa a não-existência entre os aspectos abstratos)"
+      },
+      "combat": {
+        "Dimensionalidade": "Não aplicável",
+        "Status Existencial": "Abstrato (como representação direta do Vazio, aspecto de Esquecimento)",
+        "Ataque": "Infinito",
+        "Defesa": "Equivalente ao ataque",
+        "Velocidade": "Não aplicável",
+        "Força": "Infinita",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito, como aspecto de Esquecimento"
+      },
+      "powers": [
+        "Metamorfose avançada",
+        "Manipulação da matéria a nível atômico",
+        "Necromancia e invocação de mortos-vivos",
+        "Viagem dimensional",
+        "Representação do Vazio (como aspecto de Esquecimento)"
+      ],
+      "weaknesses": "Costuma se disfarçar de fêmea por acreditar que isso o faz parecer mais fraco aos olhos dos inimigos, revelando certa vaidade estratégica explorável.",
+      "rankReason": "Tier B: possui onisciência, existência abstrata, ataque e força infinitos, velocidade não aplicável, vigor ilimitado e alcance irrestrito.",
+      "sourceNote": "Baseado na ficha de Amatsu-Mikaboshi na Liber Proeliis."
+    },
+    "beyonder": {
+      "summary": "Entidade cósmica onipotente responsável pelos eventos de Guerras Secretas na Marvel; sua simples presença já afetava todo o multiverso.",
+      "mentalidade": {
+        "Inteligência": "Pseudo-Onisciente"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Abstrato",
+        "Ataque": "Infinito (seu ataque atinge os limites do infinito; chegou a destruir um aspecto da Morte, e sua simples presença afetava o multiverso)",
+        "Defesa": "Equivalente ao ataque",
+        "Velocidade": "Onipresente",
+        "Força": "Ilimitada",
+        "Vigor": "Ilimitado",
+        "Alcance": "Infinito"
+      },
+      "powers": [
+        "Manipulação elemental total",
+        "Negação de durabilidade",
+        "Regeneração e autorressurreição",
+        "Manipulação espaço-temporal",
+        "Onipresença em seu reino",
+        "Manipulação da matéria"
+      ],
+      "weaknesses": "Fraquezas psicológicas: apesar de suas habilidades completamente poderosas e multiversais, prefere compreender tudo por meio da experiência, acabando por se limitar a situações convencionais.",
+      "rankReason": "Tier B: possui pseudo-onisciência, dimensionalidade inaplicável, existência abstrata, ataque e defesa infinitos, onipresença, força e vigor ilimitados e alcance infinito.",
+      "sourceNote": "Baseado na ficha de Beyonder (Pre-Retcon) na Liber Proeliis.",
+      "observation": "Segundo uma interpretação de sua versão original, sua relação com o tempo já foi usada para contextualizar os limites dessa manifestação."
+    },
+    "kami tenchi": {
+      "summary": "O Ser Supremo de Tenchi Muyo!, cujo poder está acima até das Choushin (Tsunami, Washu e Tokimi), as deusas criadoras de toda a cosmologia da franquia; Tenchi Masaki é sua encarnação.",
+      "mentalidade": {
+        "Inteligência": "Pseudo-Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente (seu poder está acima do que as próprias Choushin possuem)",
+        "Ataque": "Transcendente (matou o antagonista Z e empurrou de volta à Hiperdimensão as três Choushin apenas por se manifestar)",
+        "Defesa": "Equivalente ao ataque",
+        "Velocidade": "Pseudo-Onipresença",
+        "Força": "Infinita",
+        "Vigor": "Infinito",
+        "Alcance": "Infinito"
+      },
+      "powers": [
+        "Criação das Asas do Falcão da Luz",
+        "Manipulação da realidade",
+        "Transcendência sobre as deusas criadoras (Choushin)",
+        "Poder capaz de abalar toda a Hiperdimensão"
+      ],
+      "weaknesses": "Psicologicamente, ainda não pode saltar para dimensões mais altas, pois sua mente (via Tenchi) não estaria pronta para a Hiperdimensão plena.",
+      "rankReason": "Tier A: possui pseudo-onisciência, dimensionalidade inaplicável, status e ataque transcendentes, pseudo-onipresença, força, vigor e alcance infinitos.",
+      "sourceNote": "Baseado na ficha de Kami Tenchi na Liber Proeliis."
+    },
+    "tokimi": {
+      "summary": "Uma das três deusas irmãs Choushin de Tenchi Muyo!, conhecida como a 'Deusa Multidimensional'; deu origem, junto às irmãs, a toda a totalidade da criação, incluindo conceitos como tempo, espaço e vida.",
+      "mentalidade": {
+        "Inteligência": "Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Abstrato",
+        "Ataque": "Infinito (deu origem, como membro das Choushin, a toda a totalidade da criação, junto a conceitos como tempo, espaço, dimensionalidade, vida e morte)",
+        "Defesa": "Equivalente ao ataque",
+        "Velocidade": "Onipresença",
+        "Força": "Infinita",
+        "Vigor": "Infinito",
+        "Alcance": "Infinito"
+      },
+      "powers": [
+        "Criação",
+        "Manipulação de universais",
+        "Manipulação da morte",
+        "Manipulação do espaço e do tempo",
+        "Autoridade sobre a cosmologia de Tenchi Muyo!"
+      ],
+      "weaknesses": "Nenhuma.",
+      "rankReason": "Tier A: possui onisciência, dimensionalidade inaplicável, existência abstrata, ataque e defesa infinitos, onipresença, força, vigor e alcance infinitos.",
+      "sourceNote": "Baseado na ficha de Tokimi na Liber Proeliis.",
+      "observation": "Foi repelida e superada pelo Counter-Actor em determinado momento da história."
+    },
+    "yaldabaoth": {
+      "summary": "Divindade primordial da mitologia Sárquica dentro do universo SCP, capaz de se manifestar em todas as infinitas iterações da existência simultaneamente; travou uma guerra fora do espaço-tempo contra Mekhane.",
+      "mentalidade": {
+        "Inteligência": "Nenhuma; afirmada como 'cega', guiada apenas pelo instinto"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Abstrato (capaz de se manifestar em todas as infinitas iterações da existência simultaneamente)",
+        "Ataque": "Infinito (11D; caso se liberte de sua prisão, se manifestaria em todas as infinitas iterações da existência, destruindo todas as dimensões, realidades, tempo e espaço do multiverso)",
+        "Defesa": "Infinita (lutou contra Mekhane, um ser comparável a si em poder, e o teria derrotado não fosse o sacrifício dele)",
+        "Velocidade": "Onipresença",
+        "Força": "Ilimitada",
+        "Vigor": "Ilimitado",
+        "Alcance": "Infinito (existe em todas as infinitas iterações da existência)"
+      },
+      "powers": [
+        "Imortalidade",
+        "Regeneração",
+        "Manipulação da vida",
+        "Manipulação do espaço-tempo",
+        "Manipulação do caos e da matemática",
+        "Onipresença",
+        "Criação e destruição"
+      ],
+      "weaknesses": "Nenhuma.",
+      "rankReason": "Tier B: possui existência abstrata, ataque e defesa infinitos, onipresença, força e vigor ilimitados e alcance infinito, mas inteligência inexistente e guiada por instinto.",
+      "sourceNote": "Baseado na ficha de Yaldabaoth (Fundação SCP) na Liber Proeliis.",
+      "observation": "Permaneceu aprisionada por Mekhane em parte importante de sua narrativa."
+    },
+    "sonho dos perpetuos": {
+      "summary": "Um dos sete Perpétuos (Endless), personificando o próprio sonho; também conhecido como Morfeu, governa o Reino dos Sonhos e é poderoso o bastante para forçar sua entrada no Inferno.",
+      "mentalidade": {
+        "Inteligência": "Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Abstrato (personifica o próprio sonho, sendo a abstração em si)",
+        "Ataque": "Infinito",
+        "Defesa": "Equivalente ao ataque",
+        "Velocidade": "Onipresença",
+        "Força": "Ilimitada",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Manipulação de sonhos",
+        "Manipulação espaço-temporal",
+        "Manipulação causal",
+        "Telepatia e telecinesia",
+        "Regeneração",
+        "Não-corporeidade"
+      ],
+      "weaknesses": "Fraqueza física: fica enfraquecido quando permanece fora de seu reino por muito tempo sem suas ferramentas.",
+      "rankReason": "Tier B: possui onisciência, dimensionalidade inaplicável, existência abstrata, ataque infinito, onipresença, força e vigor ilimitados e alcance irrestrito.",
+      "sourceNote": "Baseado na ficha de Dream of the Endless na Liber Proeliis.",
+      "observation": "Está sujeito às regras e tradições complexas que unem os Perpétuos."
+    },
+    "antimonitor": {
+      "summary": "Vilão nascido junto ao Monitor de um 'acidente' que também deu origem ao Multiverso pré-Crise e ao Universo Antimatéria; reduziu o número de universos do multiverso infinito para apenas 52.",
+      "mentalidade": {
+        "Inteligência": "Consciência Cósmica"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Equivalente ao ataque",
+        "Velocidade": "Não aplicável",
+        "Força": "Infinita",
+        "Vigor": "Ilimitado",
+        "Alcance": "Infinito"
+      },
+      "powers": [
+        "Manipulação de tamanho",
+        "Manipulação material e energética",
+        "Manipulação temporal e espacial",
+        "Manipulação da antimatéria",
+        "Manipulação mental",
+        "Imortalidade"
+      ],
+      "weaknesses": "Nenhuma.",
+      "rankReason": "Tier B: possui consciência cósmica, dimensionalidade e velocidade inaplicáveis, existência e ataque transcendentes, força infinita, vigor ilimitado e alcance infinito.",
+      "sourceNote": "Baseado na ficha de Anti-Monitor na Liber Proeliis.",
+      "observation": "Já foi derrotado pelo Superman da Terra-2 com a participação coordenada de outros heróis cósmicos."
+    },
+    "dr. manhattan": {
+      "summary": "Jonathan Osterman, físico nuclear transformado em um ser onipotente após um acidente com um Subtrator de Campo Intrínseco; manipula matéria, tempo e energia em nível subatômico e observa passado, presente e futuro simultaneamente.",
+      "mentalidade": {
+        "Inteligência": "Consciência Cósmica"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Energético",
+        "Ataque": "Infinito (muito mais poderoso que o Sr. Mxyzptlk; manteve toda a linha temporal do evento Ponto de Ignição e a apagou por completo quando quis)",
+        "Defesa": "Infinita, equivalente ao ataque",
+        "Velocidade": "Onipresente",
+        "Força": "Infinita",
+        "Vigor": "Ilimitado",
+        "Alcance": "Infinito"
+      },
+      "powers": [
+        "Manipulação quântica e temporal",
+        "Onipresença temporal",
+        "Manipulação de energia",
+        "Teletransporte",
+        "Autoduplicação",
+        "Manipulação da matéria a nível subatômico"
+      ],
+      "weaknesses": "Fraqueza física: radiação pode atrapalhar sua percepção dos diferentes momentos do tempo. Fraqueza psicológica: por falta de interpretação, por pouco não destruiu todo o Universo.",
+      "rankReason": "Tier B: possui consciência cósmica, dimensionalidade inaplicável, existência energética, ataque, defesa, força e alcance infinitos, além de onipresença e vigor ilimitado.",
+      "sourceNote": "Baseado na ficha de Doctor Manhattan na Liber Proeliis.",
+      "observation": "Táquions já obscureceram sua percepção do passado e do futuro, e sua relação determinista com o tempo dificulta alterar o próprio futuro percebido."
+    },
+    "thanos": {
+      "summary": "O Titã Louco da Marvel Comics, senhor da guerra que busca as Joias do Infinito para satisfazer sua amada Morte; em suas encarnações mais poderosas (como usuário de Cubos Cósmicos), chega a atingir um status transcendente.",
+      "mentalidade": {
+        "Inteligência": "Gênio intelectual, com milhares de anos de experiência em combate e estratégia"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável (em sua forma mais poderosa, como usuário de um Cubo Cósmico completo)",
+        "Status Existencial": "Transcendente (em sua encarnação mais elevada, empunhando um Cubo Cósmico completo)",
+        "Ataque": "Transcendente (controlou a realidade por completo ao dominar um Cubo Cósmico inteiro)",
+        "Defesa": "Transcendente, equivalente ao ataque",
+        "Velocidade": "Irrelevante, em sua forma mais poderosa",
+        "Força": "Não aplicável, em sua forma mais poderosa",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito, em sua forma mais poderosa"
+      },
+      "powers": [
+        "Força e durabilidade sobre-humanas",
+        "Telepatia",
+        "Projeção de energia",
+        "Campos de força",
+        "Uso das Joias e da Manopla do Infinito",
+        "Domínio de exércitos cósmicos (Chitauri, Outriders)"
+      ],
+      "weaknesses": "Cubo Cósmico: seus poderes nessa forma não se sincronizaram totalmente com o seu ser; portanto, destruir o cubo retiraria os seus poderes.",
+      "observation": "Sua obsessão em agradar a Morte já influenciou decisões importantes e chegou a lhe custar vitórias ou a própria vida em outros contextos.",
+      "rankReason": "Tier B: rebaixado porque sua forma de pico depende do Cubo Cósmico, que pode ser destruído e retirar seus poderes.",
+      "sourceNote": "Baseado na ficha de Thanos na Liber Proeliis."
+    },
+    "a lei da identidade": {
+      "suggestedTier": 2,
+      "summary": "Entidade que antecede a criação dentro da cosmologia apresentada e constitui a causa da própria existência, transcendendo a hierarquia narrativa em que Akuto Sai reside.",
+      "mentalidade": {
+        "Inteligência": "Pseudo-Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Transcendente",
+        "Velocidade": "Não aplicável",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Causalidade",
+        "Transcendência",
+        "Manipulação da realidade",
+        "Manipulação da narrativa",
+        "Criação de histórias",
+        "Existência além da ficção"
+      ],
+      "weaknesses": "Nenhuma limitação de combate relevante é indicada na ficha consultada.",
+      "rankReason": "Tier A: possui dimensionalidade inaplicável, status e ataque transcendentes, vigor ilimitado e alcance irrestrito; a pseudo-onisciência é a única característica abaixo do máximo.",
+      "sourceNote": "Baseado na ficha de A Lei da Identidade da Liber Proeliis. Fonte: https://liberproeliis.fandom.com/pt-br/wiki/A_Lei_da_Identidade"
+    },
+    "yog-sothoth": {
+      "suggestedTier": 1,
+      "summary": "Entidade exterior suprema dos Mitos de Cthulhu, descrita como simultaneamente possível e impossível, tudo e nada, além das hierarquias e dos limites convencionais de ciência, espaço e tempo.",
+      "mentalidade": {
+        "Inteligência": "Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Transcendente",
+        "Velocidade": "Não aplicável",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Transcendência",
+        "Onipresença conceitual",
+        "Manipulação espaço-temporal",
+        "Existência abstrata",
+        "Manipulação da realidade",
+        "Conhecimento cósmico"
+      ],
+      "weaknesses": "Nenhuma fraqueza de combate destacada na ficha consultada.",
+      "rankReason": "Tier S: possui onisciência, dimensionalidade e velocidade inaplicáveis, existência, ataque e defesa transcendentes, vigor ilimitado e alcance irrestrito.",
+      "sourceNote": "Baseado na ficha de Yog-Sothoth (Cthulhu Mythos) da Liber Proeliis. Fonte: https://liberproeliis.fandom.com/pt-br/wiki/Yog-Sothoth_%28Cthulhu_Mythos%29"
+    },
+    "akuto sai": {
+      "suggestedTier": 3,
+      "summary": "Protagonista de Demon King Daimao cuja forma máxima deixa de pertencer a uma história comum e alcança o vazio exterior às estruturas narrativas da obra.",
+      "mentalidade": {
+        "Inteligência": "Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Transcendente",
+        "Velocidade": "Não aplicável",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Irrestrito"
+      },
+      "powers": [
+        "Manipulação da realidade",
+        "Manipulação narrativa",
+        "Onisciência",
+        "Transcendência",
+        "Criação e simulação de histórias",
+        "Existência fora da narrativa"
+      ],
+      "weaknesses": "Fraquezas físicas: não controla seus poderes, levando-o a usar mais poder do que normalmente pretendia, embora tenha superado essa fraqueza no Ato 4. Fraquezas psicológicas: não gosta de matar seus oponentes, não importa o motivo. Ao perceber a natureza fictícia de sua existência, desejou terminar a própria existência e entrou em depressão.",
+      "observation": "Na forma máxima, a escala de poder alcançada pode tornar algumas de suas limitações psicológicas menos relevantes durante o combate.",
+      "rankReason": "Tier B: rebaixado porque existe uma variação em que seus poderes não estão no máximo e suas limitações físicas e psicológicas são relevantes.",
+      "sourceNote": "Baseado na ficha de Akuto Sai da Liber Proeliis. Fonte: https://liberproeliis.fandom.com/pt-br/wiki/Akuto_Sai"
+    },
+    "senhor mxyzptlk": {
+      "suggestedTier": 3,
+      "summary": "Duende pentadimensional da DC cuja forma real transcende o espaço-tempo convencional e pode reescrever ou apagar a existência por imaginação.",
+      "mentalidade": {
+        "Inteligência": "Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável em sua forma mais elevada",
+        "Status Existencial": "Abstrato",
+        "Ataque": "Infinito",
+        "Defesa": "Infinito",
+        "Velocidade": "Não aplicável",
+        "Força": "Desconhecida",
+        "Vigor": "Infinito",
+        "Alcance": "Infinito"
+      },
+      "powers": [
+        "Manipulação da nulidade",
+        "Toon Force",
+        "Manipulação espacial",
+        "Manipulação temporal",
+        "Manipulação dimensional",
+        "Imortalidade",
+        "Manipulação da realidade"
+      ],
+      "weaknesses": "Na ficha, dizer seu nome de trás para frente o força a retornar à Quinta Dimensão; a própria ficha ressalta que ele pode fingir cair nessa armadilha.",
+      "rankReason": "Tier B: embora tenha inteligência onisciente, dimensionalidade inaplicável e ataque/defesa infinitos, o status é abstrato, a força é desconhecida e ainda possui uma vulnerabilidade de retorno à Quinta Dimensão.",
+      "sourceNote": "Baseado na ficha de Senhor Mxyzptlk da Liber Proeliis. Fonte: https://liberproeliis.fandom.com/pt-br/wiki/Senhor_Mxyzptlk"
+    },
+    "robô do pensamento": {
+      "suggestedTier": 4,
+      "summary": "Armadura cósmica automatizada, essencialmente o equivalente ao 'Superman de armadura cósmica' (Cosmic Armor Superman) só que sem piloto: um robô sem personalidade, criado como último recurso para proteger o multiverso, com evolução reativa contra ameaças.",
+      "mentalidade": {
+        "Inteligência": "Extremamente alta"
+      },
+      "combat": {
+        "Dimensionalidade": "4D",
+        "Status Existencial": "Concreto",
+        "Ataque": "Multiversal",
+        "Defesa": "Multiversal",
+        "Velocidade": "Infinita",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Multiversal"
+      },
+      "powers": [
+        "Evolução reativa",
+        "Consciência da 4ª parede",
+        "Resistência à manipulação de roteiro",
+        "Manipulação temporal",
+        "Manipulação espacial",
+        "Manipulação da matéria",
+        "Invulnerabilidade"
+      ],
+      "weaknesses": "Só pode ser ativado pela energia de uma simetria perfeita e é desativado quando deixa de ser necessário.",
+      "rankReason": "Tier C: rebaixado por depender de uma simetria perfeita para ser ativado e ser desativado quando deixa de ser necessário.",
+      "sourceNote": "Baseado na ficha de Robô do Pensamento da Liber Proeliis. Fonte: https://liberproeliis.fandom.com/pt-br/wiki/Rob%C3%B4_do_Pensamento"
+    },
+    "mandrakk": {
+      "suggestedTier": 4,
+      "summary": "Monitor vampírico que atua como uma das maiores ameaças da cosmologia DC, alimentando-se da própria criação e ameaçando a estrutura dos universos.",
+      "mentalidade": {
+        "Inteligência": "Pseudo-Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "4D",
+        "Status Existencial": "Concreto",
+        "Ataque": "Multiversal",
+        "Defesa": "Multiversal",
+        "Velocidade": "Mais rápido que a luz",
+        "Força": "Infinita",
+        "Vigor": "Ilimitado",
+        "Alcance": "Multiversal"
+      },
+      "powers": [
+        "Manipulação do tempo",
+        "Manipulação do espaço",
+        "Imortalidade",
+        "Manipulação de vetores",
+        "Absorção",
+        "Regeneração",
+        "Manipulação material"
+      ],
+      "weaknesses": "Nenhuma notável indicada na ficha.",
+      "rankReason": "Tier C: rebaixado por reunir vários atributos abaixo das entidades dos tiers superiores.",
+      "sourceNote": "Baseado na ficha de Mandrakk da Liber Proeliis. Fonte: https://liberproeliis.fandom.com/pt-br/wiki/Mandrakk"
+    },
+    "darkseid": {
+      "suggestedTier": 4,
+      "summary": "Deus de Apokolips e uma das entidades centrais da cosmologia DC; sua forma verdadeira e seu acesso à Fonte elevam sua escala muito além de sua manifestação física comum.",
+      "mentalidade": {
+        "Inteligência": "Onisciência"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Transcendente",
+        "Velocidade": "Onipresença",
+        "Força": "Infinita",
+        "Vigor": "Ilimitado",
+        "Alcance": "Infinito"
+      },
+      "powers": [
+        "Manipulação da nulidade",
+        "Manipulação energética",
+        "Manipulação material",
+        "Telepatia",
+        "Telecinese",
+        "Manipulação temporal",
+        "Manipulação espacial",
+        "Criação",
+        "Remoção de campo de batalha"
+      ],
+      "weaknesses": "Nenhuma.",
+      "rankReason": "Tier C: rebaixado porque outras formas do personagem não mantêm seus melhores atributos.",
+      "sourceNote": "Baseado na ficha de Darkseid (DC Comics) da Liber Proeliis. Fonte: https://liberproeliis.fandom.com/pt-br/wiki/Darkseid_%28DC_Comics%29",
+      "observation": "Radion já foi apresentado como vulnerabilidade de algumas manifestações de Darkseid."
+    },
+    "anos voldigoad": {
+      "suggestedTier": 4,
+      "summary": "Rei Demônio da Tirania, conhecido por técnicas de destruição absolutas, manipulação de fontes e imunidade a poderes que normalmente ignorariam defesas.",
+      "mentalidade": {
+        "Inteligência": "Supergênio"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Transcendente",
+        "Velocidade": "Não aplicável",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Inaplicável"
+      },
+      "powers": [
+        "Destruição de Fontes",
+        "Venuzdonoa",
+        "Manipulação conceitual",
+        "Imortalidade",
+        "Regeneração",
+        "Manipulação do tempo e espaço"
+      ],
+      "weaknesses": "Nenhuma fraqueza física direta explorável em sua forma plena.",
+      "rankReason": "Tier C: rebaixado por possuir diversas versões consideravelmente mais fracas.",
+      "sourceNote": "Baseado na ficha de Anos Voldigoad adaptada para o padrão Liber Proeliis."
+    },
+    "wally west": {
+      "suggestedTier": 4,
+      "summary": "Wally West em seu estado máximo torna-se um dos maiores condutores da Força de Aceleração, com existência transcendental ligada a ela.",
+      "mentalidade": {
+        "Inteligência": "Alta"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável em sua forma transcendental",
+        "Status Existencial": "Transcendente",
+        "Ataque": "Transcendente",
+        "Defesa": "Transcendente",
+        "Velocidade": "Não aplicável",
+        "Força": "Não aplicável",
+        "Vigor": "Ilimitado",
+        "Alcance": "Ilimitado"
+      },
+      "powers": [
+        "Força de Aceleração",
+        "Viagem temporal",
+        "Roubo de velocidade",
+        "Concessão de velocidade",
+        "Intangibilidade",
+        "Manipulação energética"
+      ],
+      "weaknesses": "Pode ser absorvido pela Força de Aceleração caso utilize uma frequência vibracional sobrecarregada.",
+      "rankReason": "Tier C: rebaixado porque outras variações não mantêm o mesmo conjunto de atributos de sua forma máxima.",
+      "sourceNote": "Baseado na ficha de Flash (Wally West) da Liber Proeliis. Fonte: https://liberproeliis.fandom.com/pt-br/wiki/Flash_%28Wally_West%29",
+      "observation": "Sua manifestação máxima depende de uma conexão plena com a Força de Aceleração."
+    },
+    "superman": {
+      "summary": "Kal-El, o último filho de Krypton, principal super-herói da DC Comics; em seus feitos mais fortes registrados, seus golpes já escalaram a nível Infinito ao colidirem com energia ligada a O Forjador de Mundos.",
+      "mentalidade": {
+        "Inteligência": "Gênio-Avançado (memória fotográfica; consegue aprender décadas de informação em segundos)"
+      },
+      "combat": {
+        "Dimensionalidade": "Inaplicável",
+        "Status Existencial": "Concreto",
+        "Ataque": "Infinito (escala com sua defesa; a onda de choque do próprio soco colidiu com energia ligada a O Forjador de Mundos)",
+        "Defesa": "Infinito (aguentou a onda de choque do próprio soco ao colidir com energia ligada a O Forjador de Mundos)",
+        "Velocidade": "Infinito",
+        "Força": "Infinito",
+        "Vigor": "Extremamente elevado (aguentou um peso equivalente ao planeta Terra por cinco dias seguidos sem esforço aparente)",
+        "Alcance": "Infinito em seus feitos mais fortes (ligados aos mesmos eventos que escalam seu Ataque/Defesa)"
+      },
+      "powers": [
+        "Força, velocidade e durabilidade sobre-humanas",
+        "Voo",
+        "Visão de calor e sopro congelante",
+        "Super sentidos (audição, visão telescópica e de raio-X)",
+        "Viagem dimensional e temporal",
+        "Absorção e manipulação de energia solar",
+        "Imortalidade (longevidade e ressurreição, já tendo retornado à vida por meio de A Presença)"
+      ],
+      "weaknesses": "Kryptonita (em seus vários tipos) e magia; depende da radiação de um sol amarelo para manter seus poderes plenos.",
+      "rankReason": "Posicionado no Tier C: seus feitos mais fortes registrados chegam a nível Infinito, mas de forma pontual e ligada a um evento específico, não como um traço permanente de sua natureza — diferente das entidades conceituais do topo do ranking.",
+      "sourceNote": "Baseado na ficha de Superman (DC Comics) na Liber Proeliis (pt-br). Fonte: https://liberproeliis.fandom.com/pt-br/wiki/Superman_(DC_Comics)"
+    }
+  },
+  "aliases": {
+    "toaa": "One Above All",
+    "oaa": "One Above All",
+    "scp 3812": "SCP-3812",
+    "scp-3812": "SCP-3812",
+    "yogiri": "Yogiri Takatou",
+    "mxy": "Senhor Mxyzptlk",
+    "mxyzptlk": "Senhor Mxyzptlk",
+    "thought robot": "Robô do Pensamento",
+    "cosmic armor superman": "Robô do Pensamento",
+    "yog sothoth": "Yog-Sothoth",
+    "yog-sothoth": "Yog-Sothoth"
+  }
+}
