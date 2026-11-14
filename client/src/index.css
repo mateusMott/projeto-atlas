@@ -54,9 +54,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .nav-tab.active svg { color: var(--atlas-green); }
 .nav-admin-dot { width: 5px; height: 5px; margin-left: -4px; border-radius: 50%; background: var(--atlas-green); }
 .header-actions { display: flex; align-items: center; justify-content: flex-end; min-width: 196px; gap: 13px; }
-.icon-button, .quiet-button, .login-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; color: #b8c0c5; background: transparent; font-size: 12px; }
-.icon-button { height: 34px; padding: 0 9px; border: 1px solid var(--atlas-line); border-radius: 6px; }
-.icon-button:hover, .quiet-button:hover { color: var(--atlas-green); border-color: rgba(184,255,85,.3); }
+.quiet-button, .login-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; color: #b8c0c5; background: transparent; font-size: 12px; }
+.quiet-button:hover { color: var(--atlas-green); border-color: rgba(184,255,85,.3); }
 kbd { display: inline-flex; align-items: center; gap: 3px; padding: 2px 5px; border: 1px solid var(--atlas-line); border-radius: 4px; color: var(--atlas-muted); background: rgba(255,255,255,.025); font: 500 10px/1.2 "DM Sans", sans-serif; }
 .user-menu { display: flex; align-items: center; gap: 12px; }
 .user-label { display: inline-flex; align-items: center; gap: 6px; max-width: 128px; overflow: hidden; color: var(--atlas-muted); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
@@ -345,8 +344,7 @@ kbd { display: inline-flex; align-items: center; gap: 3px; padding: 2px 5px; bor
   .atlas-header { width: 100%; height: auto; min-height: 64px; flex-wrap: wrap; justify-content: space-between; padding: 0 18px; }
   .atlas-brand { min-width: unset; }
   .header-actions { min-width: unset; gap: 8px; }
-  .search-shortcut { width: 34px; padding: 0; }
-  .search-shortcut kbd, .user-label, .quiet-button span { display: none; }
+  .user-label, .quiet-button span { display: none; }
   .user-menu { gap: 7px; }
   .main-nav { order: 3; width: calc(100% + 36px); height: 45px; justify-content: stretch; margin: 0 -18px; border-top: 1px solid var(--atlas-line); }
   .nav-tab { flex: 1; min-width: 0; gap: 6px; padding: 0 5px; font-size: 10px; }

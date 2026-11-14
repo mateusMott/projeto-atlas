@@ -71,7 +71,7 @@ export default function Home() {
 
   return <div className="atlas-shell" id="top">
     <div className="ambient-glow ambient-green" /><div className="ambient-glow ambient-blue" />
-    <AtlasHeader section={section} onSection={openSection} isAdmin={isAdmin} isAuthenticated={isAuthenticated} userLabel={session.user?.name || session.user?.email} onLogin={goLogin} onLogout={logout} logoutBusy={session.loading} onFocusSearch={focusSearch} />
+    <AtlasHeader section={section} onSection={openSection} isAdmin={isAdmin} isAuthenticated={isAuthenticated} userLabel={session.user?.name || session.user?.email} onLogin={goLogin} onLogout={logout} logoutBusy={session.loading} />
     <main className="atlas-main">
       {section === "ranking" && <>
         <section className="hero-search" aria-labelledby="hero-title">
