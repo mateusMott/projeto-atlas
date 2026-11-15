@@ -34,7 +34,7 @@ export type CatalogResponse = {
 
 export type ResearchLookup = {
   pairKey: string;
-  status: "favored" | "inconclusive" | "outdated";
+  status: "favored" | "inconclusive" | "outdated" | "unknown";
   winnerId?: string | null;
   confidence?: unknown;
   reason?: unknown;

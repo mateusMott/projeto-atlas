@@ -92,10 +92,14 @@ async function lookupStaticResearch(firstId: string, secondId: string): Promise<
   const pair = research.pairs?.[pairKey];
   if (!pair) return null;
   const isStale = Boolean(pair.isStale || pair.outdated || pair.status === "outdated");
+  const status: ResearchLookup["status"] = isStale
+    ? "outdated"
+    : pair.status === "favored" ? "favored"
+    : pair.status === "inconclusive" ? "inconclusive" : "unknown";
   return {
     pairKey,
-    status: isStale ? "outdated" : pair.status as ResearchLookup["status"],
-    winnerId: isStale ? null : (pair.winnerId as string | null | undefined),
+    status,
+    winnerId: status === "favored" ? (pair.winnerId as string | null | undefined) : null,
     confidence: pair.confidence,
     reason: pair.reason,
     counter: pair.counter,
@@ -132,16 +136,16 @@ export function useAtlasCatalog(): QueryResult<CatalogResponse> {
 export function useAtlasResearchLookup(
   firstId: string,
   secondId: string,
-  valid: boolean,
+  enabled: boolean,
 ): QueryResult<ResearchLookup | null> {
   const apiQuery = atlasApi.atlas.research.lookup.useQuery(
     { firstId, secondId },
-    { enabled: valid && !IS_ATLAS_STATIC },
+    { enabled: enabled && !IS_ATLAS_STATIC },
   );
   const staticQuery = useQuery({
     queryKey: ["atlas-static", "research", ...[firstId, secondId].sort()],
     queryFn: () => lookupStaticResearch(firstId, secondId),
-    enabled: IS_ATLAS_STATIC && valid,
+    enabled: IS_ATLAS_STATIC && enabled,
     staleTime: Infinity,
   });
   if (IS_ATLAS_STATIC) {
