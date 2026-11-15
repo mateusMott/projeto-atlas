@@ -41,6 +41,14 @@ As tabelas Atlas são criadas pelas migrations em `drizzle/`. Na primeira consul
 
 O banco gerenciado é compartilhado entre desenvolvimento e produção; qualquer escrita de teste também afeta os dados persistidos. Use consultas somente de leitura para verificações de contagem.
 
+## Publicação: Manus e GitHub Pages
+
+Existem dois destinos distintos. **O Atlas completo do Manus é dinâmico**: `pnpm build` compila o cliente e o servidor Express, e `pnpm start` executa o servidor que fornece a API tRPC, OAuth e acesso ao MySQL. O `Dockerfile` usa esse build completo. Para publicar uma versão nova no Manus, use o fluxo de publicação do projeto Manus; um push ao GitHub, por si só, não atualiza o app Manus.
+
+O GitHub Pages usa somente `pnpm build:pages`, que define `VITE_ATLAS_STATIC=true` e gera um snapshot de leitura a partir dos arquivos versionados em `data/atlas/`. O workflow `.github/workflows/pages.yml` publica essa variante estática quando há push em `main`. **Não use `pnpm build:pages` para publicar o app completo no Manus**: esse build não executa Express, OAuth nem MySQL. O build normal `pnpm build` não define o modo estático e mantém a aplicação completa.
+
+O repositório GitHub contém o código-fonte, migrations, testes, workflow e os dados-base do seed; não contém credenciais nem uma cópia do banco gerenciado. Edições administrativas são gravadas no MySQL do Manus e não são sincronizadas automaticamente para o GitHub. Use **Exportar JSON** no painel administrativo para obter uma cópia dos dados atuais. Se outra IA alterar a branch `main` no GitHub, essas alterações não chegam automaticamente ao projeto Manus: sincronize-as com o projeto antes de publicar uma nova versão dinâmica.
+
 ## Estrutura principal
 
 - `client/src/pages/Home.tsx` e `client/src/components/atlas/`: ranking, busca, fichas, comparação e painel administrativo.
