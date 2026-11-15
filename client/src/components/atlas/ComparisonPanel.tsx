@@ -1,6 +1,7 @@
 import { useAtlasResearchLookup } from "@/lib/atlasData";
 import { ArrowLeftRight, ExternalLink, LoaderCircle, Swords } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
+import { CharacterPicker } from "./CharacterPicker";
 import type { AtlasCharacter } from "./types";
 import { displayValue, profileField, stablePairAvailable, tierLabel } from "./utils";
 
@@ -44,15 +45,14 @@ export function ComparisonPanel({ characters, onOpenCharacter }: { characters: A
   const stale = Boolean(result && (result.isStale || result.status === "outdated"));
   const profiles = Array.isArray(result?.profiles) ? result.profiles : [];
   const winner = !stale && result?.status === "favored" ? characters.find((character) => character.id === result.winnerId) : undefined;
-  const optionList = (excludedId: string) => <><option value="">Escolha um personagem…</option>{characters.filter((character) => character.id !== excludedId).map((character) => <option value={character.id} key={character.id}>{character.name} — {character.universe}</option>)}</>;
 
   return <section className="comparison-view" aria-labelledby="comparison-title">
     <div className="section-kicker"><span>02 / LEITURA CRUZADA</span><span>SEM SIMULAÇÃO</span></div>
     <div className="section-title-row"><div><h1 id="comparison-title">Quem venceria?</h1><p>Consulte apenas pareceres já registrados no Atlas.</p></div><div className="saved-counter"><b>01</b><span>duelo<br />em análise</span></div></div>
     <div className="duel-selectors">
-      <label className="duel-select"><span>PERSONAGEM A</span><select value={firstId} onChange={(event) => setFirstId(event.target.value)} aria-label="Escolher primeiro personagem">{optionList(secondId)}</select></label>
+      <CharacterPicker label="PERSONAGEM A" ariaLabel="Buscar primeiro personagem" value={firstId} characters={characters.filter((character) => character.id !== secondId)} onChange={setFirstId} />
       <button type="button" className="swap-button" onClick={() => { setFirstId(secondId); setSecondId(firstId); }} disabled={!first || !second} aria-label="Trocar lados"><ArrowLeftRight size={19} /></button>
-      <label className="duel-select"><span>PERSONAGEM B</span><select value={secondId} onChange={(event) => setSecondId(event.target.value)} aria-label="Escolher segundo personagem">{optionList(firstId)}</select></label>
+      <CharacterPicker label="PERSONAGEM B" ariaLabel="Buscar segundo personagem" value={secondId} characters={characters.filter((character) => character.id !== firstId)} onChange={setSecondId} />
     </div>
     {!valid && <div className="inline-alert" role="status">Escolha dois personagens diferentes para consultar o arquivo.</div>}
     {valid && <div className="compare-columns">

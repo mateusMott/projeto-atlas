@@ -5,9 +5,9 @@ Recriação responsiva do Atlas original, com ranking por tiers, fichas pesquis�
 ## Funcionalidades e dados
 
 - Catálogo com **54 personagens**, sendo **44** no ranking principal. Os demais continuam acessíveis pela pesquisa e pela comparação.
-- Ranking nos tiers S, A, B, C e D; busca por nome, aliases e conteúdo da ficha; filtros por universo.
+- Ranking nos tiers S, A, B, C e D; busca por nome, aliases e conteúdo da ficha; filtros por universo. Na comparação, é possível buscar por nome, alias ou conteúdo da ficha, ignorando acentos e maiúsculas, e navegar pelas sugestões com o teclado.
 - Fichas com atributos, poderes, fraquezas, observações, fontes e ampliação de imagem.
-- Comparação sem pontuação automática e sem chamadas a serviços de IA; análises registradas incluem resultado ou inconclusão, confiança, versões, justificativa, contrapontos, método e evidências.
+- Comparação sem pontuação automática e sem chamadas a serviços de IA; análises registradas incluem resultado ou inconclusão, confiança, versões, justificativa, contrapontos, método e evidências. A marca em cubo aparece no cabeçalho, favicon e Apple touch icon.
 - **1.431 análises** incluídas: 196 com vencedor indicado, 1.235 inconclusivas e 217 marcadas como específicas.
 - Login via Manus OAuth. Apenas a conta cujo e-mail está configurado como administrador pode editar o catálogo; as alterações são persistidas no banco gerenciado e compartilhadas entre dispositivos.
 

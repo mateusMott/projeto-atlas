@@ -13,7 +13,7 @@ export function AtlasHeader({ section, onSection, isAdmin, isAuthenticated, user
   ];
   return <header className="atlas-header">
     <a className="atlas-brand" href="#top" aria-label="ATLAS — início">
-      <span className="brand-symbol"><img src={`${import.meta.env.BASE_URL}atlas-symbol.svg`} alt="" /></span>
+      <span className="brand-symbol"><img src={`${import.meta.env.BASE_URL}atlas-logo.png`} alt="" /></span>
       <span className="brand-word">ATLAS<span className="brand-period">.</span></span>
     </a>
     <div className="header-status"><span className="status-pip" /> ARQUIVO DE PERSONAGENS</div>

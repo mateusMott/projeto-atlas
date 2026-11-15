@@ -3,7 +3,7 @@
 O plano de implementação foi aprovado pelo usuário. Critérios completos permanecem junto a cada entrega e só serão marcados como concluídos com evidência do resultado.
 
 ## Interface, identidade e navegação
-- [x] Recriar fielmente o site de referência `https://atlas-de-personagens.mateusmott4.chatgpt.site/` usando o HTML enviado. Manter a identidade visual escura do Atlas, grade sutil, realces verdes, tipografia e marca fornecidas, textos em português e experiência responsiva; reutilizar as imagens e fontes do catálogo, com fallback quando uma imagem não carregar.
+- [x] Recriar fielmente o site de referência `https://atlas-de-personagens.mateusmott4.chatgpt.site/` usando o HTML enviado. Manter a identidade visual escura do Atlas, grade sutil, realces verdes, tipografia e marca fornecidas, textos em português e experiência responsiva; usar a nova imagem de marca no selo do cabeçalho e criar favicons para navegador e Apple touch; remover o símbolo SVG antigo somente depois de trocar as referências; reutilizar as imagens e fontes do catálogo, com fallback quando uma imagem não carregar.
 - [x] Manter as seções de Ranking, Comparação e Administração e os estados de autenticação apropriados: visitantes podem consultar o Atlas; somente usuários autenticados com papel de administrador podem abrir e gravar alterações administrativas.
 
 ## Catálogo, ranking e fichas
@@ -14,7 +14,7 @@ O plano de implementação foi aprovado pelo usuário. Critérios completos perm
 - [x] Reproduzir a organização mostrada no vídeo enviado: a ficha deve ter dois painéis verticais, com imagem ampliável à esquerda e painel de informações rolável à direita; no painel direito, mostrar cabeçalho com nome, universo e posição no ranking, cartão destacado de Tier com justificativa, descrição geral, mentalidade e atributos de combate em linhas de rótulo/valor, poderes em etiquetas, fraquezas, observações e fontes. Preservar todos os demais dados atuais, o fechamento acessível da ficha, o fallback de imagem e uma disposição legível em telas móveis.
 
 ## Comparação e análises salvas
-- [x] Permitir escolher dois personagens diferentes do catálogo, trocar os lados, apresentar os atributos lado a lado e consultar a análise salva do par, sem tratar Tier ou atributos como pontuação e sem chamadas de API/IA.
+- [x] Permitir escolher dois personagens diferentes do catálogo digitando para filtrar nomes, aliases e conteúdo das fichas, ignorando acentos e maiúsculas/minúsculas; priorizar resultados por nome e alias; navegar sugestões com setas, selecionar com Enter e fechar com Esc. Excluir da lista o personagem já escolhido no lado oposto e manter o botão de trocar lados. Apresentar os atributos lado a lado e consultar a análise salva do par, sem tratar Tier ou atributos como pontuação e sem chamadas de API/IA.
 - [x] Preservar integralmente as 1.431 análises de confrontos do arquivo: 196 com vencedor indicado e 1.235 inconclusivas. Apresentar resultado/inconclusão, confiança, versões consideradas, evidências, caminhos de vitória, contrapontos, método e fontes presentes nos dados; não declarar vencedor quando o dado não o indica. Exibir a distribuição real de estados, pois o texto do painel original (“1.431 vencedores definidos”) diverge do conjunto de dados.
 - [x] Para pares sem análise ou com análise desatualizada, indicar explicitamente que não há parecer vigente; não calcular ou fabricar um resultado.
 

@@ -12,7 +12,7 @@ A base fornecida tem **54 fichas**, sendo **44 no ranking principal**, e **1.431
 
 - **Ranking e pesquisa:** busca por nome, aliases e conteúdo das fichas, filtros por universo, navegação por teclado e atalho Ctrl/Cmd+K; ranking principal separado do catálogo pesquisável; tiers S, A, B, C e D com acesso à listagem completa de cada Tier. No cabeçalho, usar um ícone de pódio ou equivalente visual claro para Ranking e mover o ícone atual de duas espadas para Comparação; remover o botão visível de pesquisa no canto superior direito, sem remover a busca ou o atalho.
 - **Fichas:** nome, universo, Tier, visibilidade no ranking, imagem, resumo/versão, mentalidade, atributos de combate, poderes, fraquezas, observações, justificativa de Tier, link e nota da fonte, aliases; exibição em ficha detalhada e ampliação da imagem. Conforme o vídeo enviado em 14/11/2026, abrir a ficha em dois painéis verticais: imagem ampliável à esquerda e informações roláveis à direita. No painel de informações, priorizar cabeçalho com nome/universo/ranking, cartão de Tier destacado, descrição, mentalidade, atributos de combate em linhas rótulo/valor, poderes em etiquetas, fraquezas e fontes; preservar os demais campos e adaptar a disposição para telas móveis. Nesta solicitação, definir a imagem de The Fulcrum com o arquivo enviado, sem alterar os outros campos da ficha nem seus pareceres salvos.
-- **Comparação:** seleção de dois personagens distintos, troca de lados, atributos lado a lado e parecer salvo com resultado ou inconclusão, confiança, versões, evidências, rotas de vitória, contrapontos e fontes. O resultado nunca será inferido pela comparação numérica dos atributos.
+- **Comparação:** seleção de dois personagens distintos por campos pesquisáveis que filtram nome, aliases e conteúdo das fichas sem diferenciar acentos ou maiúsculas; sugestões navegáveis por setas, Enter para selecionar e Esc para fechar. Excluir o personagem do outro lado da lista e preservar a troca de lados. Mostrar atributos lado a lado e parecer salvo com resultado ou inconclusão, confiança, versões, evidências, rotas de vitória, contrapontos e fontes. O resultado nunca será inferido pela comparação numérica dos atributos.
 - **Administração:** autenticação Manus OAuth, saída da conta, busca e edição de fichas, criação/remoção de personagens, consulta do catálogo e cobertura das análises, além de exportação de uma cópia dos dados sem segredos. A conta Manus do usuário será a única com permissões administrativas; sem criar uma página de login local nem senha própria. Alterações serão gravadas no banco compartilhado e visíveis nos dispositivos que consultarem o site.
 - **Integridade dos pareceres:** quando resumo/versão, poderes, atributos, fraquezas ou observações de um personagem forem alterados, as análises ligadas a ele serão marcadas como desatualizadas/suspensas para revisão. Personagem novo não terá parecer inventado; os pares ainda não revisados serão indicados como sem análise. Mudanças somente de Tier, imagem ou visibilidade não invalidarão pareceres.
 
@@ -22,13 +22,13 @@ O arquivo contém 1.431 pares: **196 com vencedor indicado** e **1.235 inconclus
 
 ## Direção visual
 
-Reaproveitar a identidade e os recursos já fornecidos, sem acrescentar ilustrações genéricas: estética de arquivo/atlas sci-fi escuro com grade sutil e brilho ambiental; fundo próximo de `#090c11`, verde-neon `#b8ff55` como assinatura, tons grafite e acentos de Tier; wordmark ATLAS com o símbolo embutido no HTML; tipografia Manrope/DM Sans. Manter títulos, microcopy e navegação em português e próximos ao original.
+Reaproveitar a identidade e os recursos já fornecidos, sem acrescentar ilustrações genéricas: estética de arquivo/atlas sci-fi escuro com grade sutil e brilho ambiental; fundo próximo de `#090c11`, verde-neon `#b8ff55` como assinatura, tons grafite e acentos de Tier; wordmark ATLAS com o novo símbolo PNG no cabeçalho, favicon e apple-touch icon; tipografia Manrope/DM Sans. Manter títulos, microcopy e navegação em português e próximos ao original.
 
 - **Princípios:** hierarquia clara por Tier; foco visual em personagens e pesquisa; dados de combate apresentados como referência, sem falsa precisão; administração discreta, mas acessível a quem tem permissão.
 - **Layout:** barra superior compacta; área de busca em destaque; filtros próximos à busca; ranking dividido em faixas por Tier; comparação em área própria; painel administrativo separado.
 - **Motivos visuais:** grade de fundo de baixa intensidade; brilho verde ambiental e realces finos; cartões de personagem com badges coloridos por Tier.
 - **Interações e movimento:** estados de foco/hover claros; busca navegável por teclado; diálogos para fichas e imagem; transições breves e discretas, respeitando `prefers-reduced-motion`.
-- **Marca e voz:** manter o símbolo e a palavra ATLAS; posicionamento de atlas comparativo para explorar personagens de múltiplos universos; personalidade analítica, exploratória e precisa. Preservar chamadas como “Poder além das escalas.” e “Quem venceria?”. Cor proprietária: verde-neon `#b8ff55`.
+- **Marca e voz:** manter a palavra ATLAS e usar o novo símbolo em imagem no selo arredondado do cabeçalho, no favicon e no apple-touch icon; remover o símbolo SVG antigo quando os novos recursos estiverem prontos. O vermelho luminoso fica restrito ao símbolo; o verde-neon `#b8ff55` continua a cor proprietária da interface. Posicionamento de atlas comparativo para explorar personagens de múltiplos universos; personalidade analítica, exploratória e precisa. Preservar chamadas como “Poder além das escalas.” e “Quem venceria?”.
 
 ## Arquitetura e dados
 
@@ -49,7 +49,7 @@ As imagens e links de fonte serão reaproveitados do arquivo de referência, com
 - `server/atlas/`: consultas, permissões administrativas, regras de invalidação, seed idempotente e procedimentos tRPC do domínio Atlas.
 - `server/db.ts`, `server/routers.ts` e `drizzle/`: integração das consultas, rotas tRPC, schema e migrations MySQL.
 - `data/atlas/`: catálogo e análises iniciais derivados do arquivo do usuário, usados na inicialização versionada.
-- `client/public/`: símbolo/favicons extraídos do HTML e manifesto estático `manus-routes.json`.
+- `client/public/`: PNGs de logo/favicon/Apple touch icon e manifesto estático `manus-routes.json`.
 
 ## Limites de entrega
 
