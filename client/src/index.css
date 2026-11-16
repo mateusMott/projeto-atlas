@@ -282,8 +282,6 @@ kbd { display: inline-flex; align-items: center; gap: 3px; padding: 2px 5px; bor
 .compare-value-note { display: inline-block; margin-top: 6px; color: #98a28f; font-size: 8px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
 .compare-value-cell.possible-advantage { border-left: 3px solid #e7bf56; color: #f2e3a7; background: rgba(201,161,54,.16); }
 .compare-value-cell.possible-advantage .compare-value-note { color: #f0cf66; }
-.compare-value-cell.descriptive-difference { background: rgba(255,255,255,.018); }
-.compare-value-cell.descriptive-difference .compare-value-note { color: #88928c; }
 .muted-copy { color: var(--atlas-muted); font-size: 11px; }
 .verdict-panel { margin-top: 21px; padding: 18px 20px; border: 1px solid rgba(184,255,85,.17); border-radius: 5px; background: linear-gradient(120deg, rgba(184,255,85,.032), rgba(13,18,24,.88) 38%); }
 .verdict-label { display: flex; align-items: center; gap: 7px; color: #9bb87d; font-size: 9px; font-weight: 800; letter-spacing: .15em; }

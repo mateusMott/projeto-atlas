@@ -46,7 +46,7 @@ function ComparisonMatrix({ first, second, onOpenCharacter }: { first: AtlasChar
   return <section className="comparison-sheet" aria-labelledby="comparison-sheet-title">
     <div className="comparison-sheet-heading">
       <div><span className="comparison-sheet-kicker">FICHAS LADO A LADO</span><h3 id="comparison-sheet-title">Atributos em perspectiva</h3></div>
-      <p>Os valores vêm das fichas do Atlas. Uma vantagem possível só é marcada quando ambos os lados têm valores comparáveis; diferenças descritivas não determinam superioridade nem vencedor.</p>
+      <p>Os valores vêm das fichas do Atlas. “Vantagem” aparece em amarelo somente quando os valores têm uma escala comparável conhecida; diferenças descritivas não determinam vencedor.</p>
     </div>
     {rows.length > 0 ? <div className="compare-matrix-wrap">
       <table className="compare-matrix" aria-label={`Ficha comparativa de ${first.name} e ${second.name}`}>
@@ -61,15 +61,13 @@ function ComparisonMatrix({ first, second, onOpenCharacter }: { first: AtlasChar
         <tbody>{groups.map((group) => <Fragment key={group}>
           <tr className="compare-group-row"><th colSpan={3} scope="rowgroup">{group}</th></tr>
           {rows.filter((row) => row.group === group).map((row) => {
-            const firstNote = row.advantage === "first" ? "Vantagem possível" : row.valuesDiffer ? "Valor diferente" : "";
-            const secondNote = row.advantage === "second" ? "Vantagem possível" : row.valuesDiffer ? "Valor diferente" : "";
             return <tr className="compare-data-row" key={`${row.group}-${row.key}`}>
-              <td className={`compare-value-cell${row.advantage === "first" ? " possible-advantage" : ""}${row.valuesDiffer && !row.advantage ? " descriptive-difference" : ""}`} data-character={first.name}>
-                <span className="compare-value">{displayValue(row.first)}</span>{firstNote && <small className="compare-value-note">{firstNote}</small>}
+              <td className={`compare-value-cell${row.advantage === "first" ? " possible-advantage" : ""}`} data-character={first.name}>
+                <span className="compare-value">{displayValue(row.first)}</span>{row.advantage === "first" && <small className="compare-value-note">Vantagem</small>}
               </td>
               <th scope="row" className="compare-attribute-name">{row.label}</th>
-              <td className={`compare-value-cell${row.advantage === "second" ? " possible-advantage" : ""}${row.valuesDiffer && !row.advantage ? " descriptive-difference" : ""}`} data-character={second.name}>
-                <span className="compare-value">{displayValue(row.second)}</span>{secondNote && <small className="compare-value-note">{secondNote}</small>}
+              <td className={`compare-value-cell${row.advantage === "second" ? " possible-advantage" : ""}`} data-character={second.name}>
+                <span className="compare-value">{displayValue(row.second)}</span>{row.advantage === "second" && <small className="compare-value-note">Vantagem</small>}
               </td>
             </tr>;
           })}

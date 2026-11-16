@@ -1,5 +1,5 @@
 import type { AtlasCharacter } from "./types";
-import { displayValue, normalizeSearch, profileField } from "./utils";
+import { normalizeSearch, profileField } from "./utils";
 
 export type ComparisonRow = {
   key: string;
@@ -8,7 +8,6 @@ export type ComparisonRow = {
   first: unknown;
   second: unknown;
   advantage: "first" | "second" | null;
-  valuesDiffer: boolean;
 };
 
 type DraftRow = Pick<ComparisonRow, "key" | "group" | "label"> & {
@@ -36,8 +35,6 @@ function addValue(rows: DraftRow[], group: string, label: string, value: unknown
 function characterFields(character: AtlasCharacter): DraftRow[] {
   const profile = character.profile ?? {};
   const rows: DraftRow[] = [];
-  addValue(rows, "GERAL", "Descrição geral", profileField(profile, "summary", "resumo"));
-  addValue(rows, "GERAL", "Justificativa de Tier", profileField(profile, "rankReason", "tierReason", "justificativa"));
   addValue(rows, "MENTALIDADE", "Mentalidade", profileField(profile, "mentalidade", "mentality"));
   addValue(rows, "COMBATE", "Atributos de combate", profileField(profile, "combat", "attributes"));
   addValue(rows, "RECURSOS E LIMITES", "Poderes", profileField(profile, "powers", "poderes"));
@@ -68,20 +65,36 @@ const QUALITATIVE_SCALE: Record<string, number> = {
   extrema: 6,
 };
 
-function comparableRank(value: unknown): number | null {
+function mentalOmniscienceRank(value: string): number | null {
+  const normalized = normalizeSearch(value).trim().replace(/[.!]/g, " ").replace(/\s+/g, " ");
+  const match = /\b(?:onisciencia|onisciente)\b/.exec(normalized);
+  if (!match) return null;
+
+  const uncertainty = /\b(?:pseudo|nao|sem|ausencia|possivel|potencial|raramente|duvidosa|hipotetica|nunca|jamais)\b/;
+  const before = normalized.slice(0, match.index);
+  const after = normalized.slice(match.index + match[0].length);
+  if (uncertainty.test(before) || uncertainty.test(after)) return null;
+  return 7;
+}
+
+function comparableRank(value: unknown, group: string, label: string): number | null {
   if (typeof value !== "string") return null;
   const normalized = normalizeSearch(value).trim().replace(/[.!]/g, "").replace(/\s+/g, " ");
+  if (group === "MENTALIDADE" && normalizeSearch(label).trim() === "inteligencia") {
+    const omniscience = mentalOmniscienceRank(value);
+    if (omniscience !== null) return omniscience;
+  }
   return Object.prototype.hasOwnProperty.call(QUALITATIVE_SCALE, normalized) ? QUALITATIVE_SCALE[normalized] : null;
 }
 
-function determineAdvantage(first: unknown, second: unknown): "first" | "second" | null {
+function determineAdvantage(first: unknown, second: unknown, group: string, label: string): "first" | "second" | null {
   const firstNumber = comparableNumber(first);
   const secondNumber = comparableNumber(second);
   if (firstNumber && secondNumber && firstNumber.unit === secondNumber.unit) {
     return firstNumber.value === secondNumber.value ? null : firstNumber.value > secondNumber.value ? "first" : "second";
   }
-  const firstRank = comparableRank(first);
-  const secondRank = comparableRank(second);
+  const firstRank = comparableRank(first, group, label);
+  const secondRank = comparableRank(second, group, label);
   if (firstRank !== null && secondRank !== null && firstRank !== secondRank) return firstRank > secondRank ? "first" : "second";
   return null;
 }
@@ -105,15 +118,13 @@ export function buildComparisonRows(first: AtlasCharacter, second: AtlasCharacte
 
   return [...combined.values()].map((row) => {
     const bothPresent = row.hasFirst && row.hasSecond;
-    const valuesDiffer = bothPresent && normalizeSearch(displayValue(row.first)) !== normalizeSearch(displayValue(row.second));
     return {
       key: row.key,
       group: row.group,
       label: row.label,
       first: row.hasFirst ? row.first : undefined,
       second: row.hasSecond ? row.second : undefined,
-      advantage: bothPresent ? determineAdvantage(row.first, row.second) : null,
-      valuesDiffer,
+      advantage: bothPresent ? determineAdvantage(row.first, row.second, row.group, row.label) : null,
     };
   });
 }
