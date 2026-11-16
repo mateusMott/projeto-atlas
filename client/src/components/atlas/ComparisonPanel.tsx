@@ -1,13 +1,10 @@
 import { useAtlasResearchLookup } from "@/lib/atlasData";
 import { ArrowLeftRight, ExternalLink, Image as ImageIcon, LoaderCircle, Swords } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import { CharacterPicker } from "./CharacterPicker";
+import { buildComparisonRows } from "./comparisonData";
 import type { AtlasCharacter } from "./types";
 import { characterInitials, displayValue, profileField, stablePairAvailable, tierLabel } from "./utils";
-
-function KeyValue({ label, value }: { label: string; value: unknown }) {
-  return <div className="compare-stat"><span>{label}</span><strong>{displayValue(value)}</strong></div>;
-}
 
 function SavedProfile({ label, value }: { label: string; value: unknown }) {
   if (!value || typeof value !== "object") return null;
@@ -18,12 +15,6 @@ function SavedProfile({ label, value }: { label: string; value: unknown }) {
   if (!useful) return null;
   return <article className="research-profile"><h4>{label}</h4>{fields.map(([title, key]) => profile[key] !== undefined && <div className="research-note" key={key}><b>{title}</b><p>{displayValue(profile[key])}</p></div>)}
     {Array.isArray(sources) && sources.length > 0 && <div className="research-note"><b>Fontes</b><ul className="source-list">{sources.map((source, index) => { const item = source as Record<string, unknown>; const url = typeof item.url === "string" ? item.url : ""; return <li key={`${url}-${index}`}>{url ? <a href={url} target="_blank" rel="noreferrer">{displayValue(item.title ?? url)} <ExternalLink size={13} /></a> : displayValue(source)}{item.access ? <small>{displayValue(item.access)}</small> : null}</li>; })}</ul></div>}</article>;
-}
-
-function ComparisonAttributes({ character }: { character: AtlasCharacter }) {
-  const combat = (profileField(character.profile, "combat", "attributes") ?? {}) as Record<string, unknown>;
-  const pairs: [string, unknown][] = [["Inteligência", profileField(character.profile, "mentalidade", "mentality")], ...Object.entries(combat)];
-  return <div className="compare-attributes">{pairs.length ? pairs.map(([label, value]) => <KeyValue key={label} label={label} value={value} />) : <p className="muted-copy">Atributos não informados.</p>}</div>;
 }
 
 function MatchupCharacterCard({ character, onOpenCharacter }: { character: AtlasCharacter; onOpenCharacter: (character: AtlasCharacter) => void }) {
@@ -46,6 +37,46 @@ function MatchupCharacterCard({ character, onOpenCharacter }: { character: Atlas
       </span>
     </button>
   </article>;
+}
+
+function ComparisonMatrix({ first, second, onOpenCharacter }: { first: AtlasCharacter; second: AtlasCharacter; onOpenCharacter: (character: AtlasCharacter) => void }) {
+  const rows = useMemo(() => buildComparisonRows(first, second), [first, second]);
+  const groups = useMemo(() => [...new Set(rows.map((row) => row.group))], [rows]);
+
+  return <section className="comparison-sheet" aria-labelledby="comparison-sheet-title">
+    <div className="comparison-sheet-heading">
+      <div><span className="comparison-sheet-kicker">FICHAS LADO A LADO</span><h3 id="comparison-sheet-title">Atributos em perspectiva</h3></div>
+      <p>Os valores vêm das fichas do Atlas. Uma vantagem possível só é marcada quando ambos os lados têm valores comparáveis; diferenças descritivas não determinam superioridade nem vencedor.</p>
+    </div>
+    {rows.length > 0 ? <div className="compare-matrix-wrap">
+      <table className="compare-matrix" aria-label={`Ficha comparativa de ${first.name} e ${second.name}`}>
+        <thead><tr>
+          {[first, null, second].map((character, index) => <th key={character?.id ?? "attribute-heading"} scope="col" className={character ? "compare-character-column" : "compare-attribute-heading"}>
+            {character ? <button type="button" className="compare-character-button" onClick={() => onOpenCharacter(character)}>
+              <span className="compare-character-index">0{index === 0 ? 1 : 2}</span>
+              <span className="compare-character-copy"><strong>{character.name}</strong><small>{character.universe || "Universo não informado"} · Tier {tierLabel(character.tier)}</small></span>
+            </button> : <span>ATRIBUTO</span>}
+          </th>)}
+        </tr></thead>
+        <tbody>{groups.map((group) => <Fragment key={group}>
+          <tr className="compare-group-row"><th colSpan={3} scope="rowgroup">{group}</th></tr>
+          {rows.filter((row) => row.group === group).map((row) => {
+            const firstNote = row.advantage === "first" ? "Vantagem possível" : row.valuesDiffer ? "Valor diferente" : "";
+            const secondNote = row.advantage === "second" ? "Vantagem possível" : row.valuesDiffer ? "Valor diferente" : "";
+            return <tr className="compare-data-row" key={`${row.group}-${row.key}`}>
+              <td className={`compare-value-cell${row.advantage === "first" ? " possible-advantage" : ""}${row.valuesDiffer && !row.advantage ? " descriptive-difference" : ""}`} data-character={first.name}>
+                <span className="compare-value">{displayValue(row.first)}</span>{firstNote && <small className="compare-value-note">{firstNote}</small>}
+              </td>
+              <th scope="row" className="compare-attribute-name">{row.label}</th>
+              <td className={`compare-value-cell${row.advantage === "second" ? " possible-advantage" : ""}${row.valuesDiffer && !row.advantage ? " descriptive-difference" : ""}`} data-character={second.name}>
+                <span className="compare-value">{displayValue(row.second)}</span>{secondNote && <small className="compare-value-note">{secondNote}</small>}
+              </td>
+            </tr>;
+          })}
+        </Fragment>)}</tbody>
+      </table>
+    </div> : <p className="muted-copy">As fichas não têm atributos comparáveis cadastrados.</p>}
+  </section>;
 }
 
 export function ComparisonPanel({ characters, onOpenCharacter }: { characters: AtlasCharacter[]; onOpenCharacter: (character: AtlasCharacter) => void }) {
@@ -107,21 +138,14 @@ export function ComparisonPanel({ characters, onOpenCharacter }: { characters: A
           : result.status === "favored" ? <div className="verdict-message verdict-favored"><span className="verdict-symbol">↗</span><div><h3>{winner ? `${winner.name} — favorito no parecer salvo` : "Favorito no parecer salvo"}</h3><p>{displayValue(result.reason)}</p></div></div>
           : <div className="verdict-message verdict-unknown"><span className="verdict-symbol">?</span><div><h3>Estado do parecer não reconhecido</h3><p>O registro salvo não tem um estado válido conhecido. Nenhum vencedor será apresentado.</p></div></div>}
         {result && !stale && <>
-          <div className="verdict-meta"><span><small>CONFIANÇA</small><b>{displayValue(result.confidence)}</b></span><span><small>REVISÃO</small><b>{displayValue(result.review)}</b></span><span><small>EDIÇÃO</small><b>{displayValue(result.edition)}</b></span><span><small>PESQUISA</small><b>{displayValue(result.researchedAt)}</b></span></div>
           {result.reason && result.status === "inconclusive" && <div className="saved-evidence"><b>Por que não há conclusão</b><p>{displayValue(result.reason)}</p></div>}
           {result.counter && <div className="saved-evidence"><b>Contraponto registrado</b><p>{displayValue(result.counter)}</p></div>}
           {result.conditions && <div className="saved-evidence"><b>Condições do parecer</b><p>{displayValue(result.conditions)}</p></div>}
           {result.method && <div className="saved-evidence"><b>Método</b><p>{displayValue(result.method)}</p></div>}
           {profiles.map((value, index) => { const profile = value as Record<string, unknown>; const id = typeof profile.id === "string" ? profile.id : String(index); const character = characters.find((item) => item.id === id) ?? (index === 0 ? first : second); return <SavedProfile key={id} label={character?.name ?? id} value={value} />; })}
         </>}
-        {result && stale && <p className="stale-note">Registro associado: {displayValue(result.review)}{result.edition ? ` · ${result.edition}` : ""}</p>}
       </section>
-      <div className="compare-columns">
-        {[first, second].map((character, index) => character && <article className="compare-person" key={character.id}>
-          <button className="compare-person-heading" type="button" onClick={() => onOpenCharacter(character)}><span className="compare-monogram">{String(index + 1).padStart(2, "0")}</span><span><strong>{character.name}</strong><small>{character.universe} · Tier {tierLabel(character.tier)}</small></span></button>
-          <ComparisonAttributes character={character} />
-        </article>)}
-      </div>
+      <ComparisonMatrix first={first} second={second} onOpenCharacter={onOpenCharacter} />
     </div>}
   </section>;
 }
